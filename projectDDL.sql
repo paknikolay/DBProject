@@ -41,6 +41,9 @@ CREATE TABLE subject(
 );
 
 
+CREATE TABLE groups(
+group_no INTEGER PRIMARY KEY
+);
 
 CREATE TABLE student(
 student_id INTEGER PRIMARY KEY REFERENCES person(person_id),
@@ -48,17 +51,14 @@ data_of_enrollment DATE NOT NULL,
 degree varchar(100) REFERENCES degrees(degree) NOT NULL,
 course INTEGER NOT NULL,
 department_id INTEGER REFERENCES department(department_id) NOT NULL,
-dormitory INTEGER
+dormitory INTEGER,
+group_no INTEGER NOT NULL REFERENCES groups(group_no)
 );
 
 
-CREATE TABLE groups(
-group_no INTEGER REFERENCES student(student_id) PRIMARY KEY,
-president_id INTEGER NOT NULL REFERENCES student(student_id)
-);
 
-CREATE TABLE student_group(
-  student_id INTEGER NOT NULL REFERENCES student(student_id),
+CREATE TABLE president_group(
+  president_id INTEGER NOT NULL REFERENCES student(student_id),
   group_no INTEGER NOT NULL REFERENCES groups(group_no)
 );
 
@@ -82,14 +82,17 @@ CREATE TABLE schedule(
 
 
 
-drop TABLE  chair;
-drop TABLE  person;
-DROP TABLE teachers;
-drop TABLE  department;
+
+
+drop TABLE  schedule;
+DROP  TABLE student_group;
+DROP TABLE groups;
+DROP TABLE student;
+drop TABLE  subject;
 drop TABLE department_chair;
 DROP TABLE chair_teacher;
-drop TABLE  subject;
-DROP TABLE student;
-DROP TABLE groups;
+drop TABLE  chair;
+drop TABLE  department;
+DROP TABLE teachers;
+drop TABLE  person;
 DROP  TABLE degrees;
-drop TABLE  schedule;
