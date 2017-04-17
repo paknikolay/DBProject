@@ -11,7 +11,7 @@ CREATE TABLE person(
 );
 
 CREATE TABLE teachers(
- teacher_id BIGSERIAL PRIMARY KEY REFERENCES person(person_id)
+ teacher_id INTEGER PRIMARY KEY REFERENCES person(person_id)
 );
 
 
@@ -43,7 +43,7 @@ CREATE TABLE subject(
 
 
 CREATE TABLE student(
-student_id BIGSERIAL PRIMARY KEY REFERENCES person(person_id),
+student_id INTEGER PRIMARY KEY REFERENCES person(person_id),
 data_of_enrollment DATE NOT NULL,
 degree varchar(100) REFERENCES degrees(degree) NOT NULL,
 course INTEGER NOT NULL,
@@ -53,8 +53,8 @@ dormitory INTEGER
 
 
 CREATE TABLE groups(
-group_no BIGSERIAL REFERENCES student(student_id) PRIMARY KEY,
-prisent_id INTEGER NOT NULL REFERENCES student(student_id)
+group_no INTEGER REFERENCES student(student_id) PRIMARY KEY,
+president_id INTEGER NOT NULL REFERENCES student(student_id)
 );
 
 CREATE TABLE student_group(
@@ -63,7 +63,7 @@ CREATE TABLE student_group(
 );
 
 CREATE TABLE chair_teacher (
-teacher_id BIGSERIAL REFERENCES chair(chair_id) PRIMARY KEY,
+teacher_id INTEGER REFERENCES chair(chair_id) PRIMARY KEY,
 chair_id INTEGER REFERENCES teachers(teacher_id) NOT NULL
 );
 
