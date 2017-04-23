@@ -2,7 +2,7 @@
 #define SEARCH_MENU_H
 
 #include <QMainWindow>
-#include "data_shower.h"
+//#include "data_menu.h"
 namespace Ui {
 class Search_menu;
 }

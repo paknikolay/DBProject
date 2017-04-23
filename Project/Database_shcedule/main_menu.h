@@ -3,9 +3,9 @@
 
 #include <QMainWindow>
 #include "user.h"
-#include "data_shower.h"
+//#include "data_menu.h"
 #include "persional_data.h"
-#include "schedule_menu.h"
+#include "schedule_shower.h"
 #include "search_menu.h"
 namespace Ui {
 class Main_menu;

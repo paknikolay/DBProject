@@ -3,7 +3,7 @@
 
 #include <QMainWindow>
 #include "user.h"
-#include "data_shower.h"
+//#include "data_menu.h"
 
 namespace Ui {
 class Persional_data;

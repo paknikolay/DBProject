@@ -156,7 +156,7 @@ first: all
 ####### Build rules
 
 $(TARGET): ui_main_menu.h ui_data_shower.h ui_schedule_menu.h ui_search_menu.h ui_persional_data.h ui_sign_up.h $(OBJECTS)  
-	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS) -I /usr/local/include/pqxx -L /usr/local/lib -I /usr/local/pgsql/include -L /usr/local/pgsql/lib -lpqxx -lpq
+	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)
 
 Makefile: ../Project/Database_shcedule/Database_shcedule.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \

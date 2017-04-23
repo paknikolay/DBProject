@@ -14,24 +14,24 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
         main_menu.cpp \
-    data_shower.cpp \
-    schedule_menu.cpp \
     search_menu.cpp \
-    persional_data.cpp \
     sign_up.cpp \
-    user.cpp
+    user.cpp \
+    schedule_shower.cpp \
+    schedule_menu_.cpp \
+    student_time.cpp
 
 HEADERS  += main_menu.h \
-    data_shower.h \
-    schedule_menu.h \
     search_menu.h \
-    persional_data.h \
     sign_up.h \
-    user.h
+    user.h \
+    schedule_shower.h \
+    schedule_menu_.h \
+    student_time.h
 
 FORMS    += main_menu.ui \
-    data_shower.ui \
-    schedule_menu.ui \
     search_menu.ui \
-    persional_data.ui \
-    sign_up.ui
+    sign_up.ui \
+    schedule_shower.ui \
+    schedule_menu_.ui \
+    student_time.ui
