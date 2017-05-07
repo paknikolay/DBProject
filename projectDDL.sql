@@ -76,7 +76,7 @@ CREATE TABLE schedule(
  teacher_id INTEGER NOT NULL REFERENCES teachers(teacher_id),
  group_no INTEGER NOT NULL REFERENCES groups(group_no),
  subject_id INTEGER NOT NULL REFERENCES subject(subject_id),
- subjrect_type VARCHAR(100) NOT NULL
+ subject_type VARCHAR(100) NOT NULL
 );
 
 
