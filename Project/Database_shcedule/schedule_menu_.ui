@@ -14,7 +14,7 @@
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QCheckBox" name="checkBox_3">
+   <widget class="QCheckBox" name="wednesday">
     <property name="geometry">
      <rect>
       <x>300</x>
@@ -45,7 +45,7 @@
      <string>В главное меню</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="textBrowser">
+   <widget class="QTextBrowser" name="group">
     <property name="geometry">
      <rect>
       <x>290</x>
@@ -86,7 +86,7 @@
      <string>Завершить сеанс</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton">
+   <widget class="QRadioButton" name="first">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -104,7 +104,7 @@
      <string>&amp;1 курс</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_4">
+   <widget class="QRadioButton" name="fourth">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -122,7 +122,7 @@
      <string>&amp;4 курс</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_5">
+   <widget class="QCheckBox" name="friday">
     <property name="geometry">
      <rect>
       <x>520</x>
@@ -158,7 +158,7 @@
      <string>Введите номер группы: </string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton_2">
+   <widget class="QPushButton" name="master">
     <property name="geometry">
      <rect>
       <x>540</x>
@@ -176,7 +176,7 @@
      <string>Магистратура</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_4">
+   <widget class="QCheckBox" name="thursday">
     <property name="geometry">
      <rect>
       <x>400</x>
@@ -194,7 +194,7 @@
      <string>Четверг</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox">
+   <widget class="QCheckBox" name="monday">
     <property name="geometry">
      <rect>
       <x>20</x>
@@ -212,7 +212,7 @@
      <string>Понедельник</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_3">
+   <widget class="QRadioButton" name="third">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -248,7 +248,7 @@
      <string>Выберете пункты для поиска</string>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_2">
+   <widget class="QCheckBox" name="tuesday">
     <property name="geometry">
      <rect>
       <x>180</x>
@@ -279,7 +279,7 @@
      <set>QDialogButtonBox::No|QDialogButtonBox::Yes</set>
     </property>
    </widget>
-   <widget class="QCheckBox" name="checkBox_6">
+   <widget class="QCheckBox" name="saturday">
     <property name="geometry">
      <rect>
       <x>650</x>
@@ -297,7 +297,7 @@
      <string>Суббота</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QPushButton" name="bachelor">
     <property name="geometry">
      <rect>
       <x>97</x>
@@ -333,7 +333,7 @@
      <string>Результат</string>
     </property>
    </widget>
-   <widget class="QRadioButton" name="radioButton_2">
+   <widget class="QRadioButton" name="second">
     <property name="geometry">
      <rect>
       <x>120</x>
@@ -351,6 +351,42 @@
      <string>&amp;2 курс</string>
     </property>
    </widget>
+   <widget class="QRadioButton" name="sixth">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>170</y>
+      <width>105</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&amp;6 курс</string>
+    </property>
+   </widget>
+   <widget class="QRadioButton" name="fifth">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>140</y>
+      <width>105</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>15</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>&amp;5 курс</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
@@ -358,7 +394,7 @@
      <x>0</x>
      <y>0</y>
      <width>800</width>
-     <height>30</height>
+     <height>25</height>
     </rect>
    </property>
   </widget>

@@ -15,6 +15,9 @@ public:
     explicit Schedule_menu_(QWidget *parent = 0);
     ~Schedule_menu_();
 
+private slots:
+    void on_pushButton_3_clicked();
+
 private:
     Ui::Schedule_menu_ *ui;
 };

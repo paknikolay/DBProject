@@ -6,7 +6,7 @@
 class User
 {
 public:
-    QString surname,name;
+    QString surname,name, patronymic, person_id;
     User();
 };
 

@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
     w.show();
 
 
-    Main_menu w2;
+  Main_menu w2;
     w2.show();
 
     //Persional_data w3;

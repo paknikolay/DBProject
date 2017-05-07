@@ -1,0 +1,50 @@
+#include "search_menu.h"
+#include "ui_search_menu.h"
+#include "schedule_shower.h"
+#include <string>
+using std::string;
+Search_menu::Search_menu(QWidget *parent) :
+    QMainWindow(parent),
+    ui(new Ui::Search_menu)
+{
+    ui->setupUi(this);
+}
+
+Search_menu::~Search_menu()
+{
+    delete ui;
+}
+
+void Search_menu::on_pushButton_clicked()
+{
+    string query = "SELECT name, surname, patronymic ";
+    query+= (ui->age->isChecked() ? ", age " : "" );
+    query+=(ui->address->isChecked() ? ", address" : "");
+    query+= (ui->phone->isChecked() ? ",phone" : "");
+    query+=(ui->email->isChecked() ? ",email" : "");
+    query+=(ui->department->isChecked() ? ",department_id" : "");
+    query+=(ui->course->isChecked() ? ",course" : "");
+    query+=(ui->degree->isChecked() ? ",degree" : "");
+    query+=(ui->group->isChecked() ? ",group_no" : "");
+    query+=(ui->date->isChecked() ? ",data_of_enrollment" : "");
+    query+=(ui->subjects->isChecked() ? ",subject_name" : "");
+
+    query+=
+    " FROM person";
+    if(ui->department->isChecked() || ui->course->isChecked() ||
+            ui->degree->isChecked() ||ui->group->isChecked() ||
+            ui->date->isChecked())
+        query+=" INNER JOIN student ON(person.person_id = student_id) ";
+    if(ui->subjects->isChecked())
+        query+= " NATURAL JOIN schedule NATURAL JOIN subject";
+    query+= " WHERE name = '" + ui->name->toPlainText().toStdString() +
+    "' AND surname = '" + ui->surname->toPlainText().toStdString() +
+     "' AND patronymic = '" + ui->pathronymic->toPlainText().toStdString()+"'";
+   // ui->label->setText(QString::fromStdString(query));
+    Schedule_shower *shower = new Schedule_shower(this, query);
+    shower->show();
+
+
+
+                                   ;
+}
