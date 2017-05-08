@@ -1,6 +1,7 @@
 #include "schedule_menu_.h"
 #include "ui_schedule_menu_.h"
 #include "schedule_shower.h"
+#include "main_menu.h"
 #include <string>
 using std:: string;
 Schedule_menu_::Schedule_menu_(QWidget *parent) :
@@ -8,6 +9,18 @@ Schedule_menu_::Schedule_menu_(QWidget *parent) :
     ui(new Ui::Schedule_menu_)
 {
     ui->setupUi(this);
+    ui->first->hide();
+    ui->second->hide();
+    ui->third->hide();
+    ui->fourth->hide();
+    ui->fifth->hide();
+    ui->sixth->hide();
+    ui->monday->hide();
+    ui->tuesday->hide();
+    ui->wednesday->hide();
+    ui->thursday->hide();
+    ui->friday->hide();
+
 }
 
 Schedule_menu_::~Schedule_menu_()
@@ -109,3 +122,56 @@ shower->show();
 
 }
 
+
+void Schedule_menu_::on_bachelor_clicked()
+{
+    ui->first->show();
+    ui->second->show();
+    ui->third->show();
+    ui->fourth->show();
+    ui->bachelor->hide();
+    ui->master->hide();
+}
+
+void Schedule_menu_::on_first_clicked()
+{
+
+}
+
+void Schedule_menu_::on_third_clicked()
+{
+
+}
+
+void Schedule_menu_::on_master_clicked()
+{
+    ui->fifth->show();
+    ui->sixth->show();
+    ui->bachelor->hide();
+    ui->master->hide();
+
+
+}
+
+void Schedule_menu_::on_buttonBox_accepted()
+{   if(ui->buttonBox->Yes || ui->buttonBox->No)
+    {
+        ui->label_2->hide();
+        ui->buttonBox->hide();
+}
+    if(ui->buttonBox->Yes)
+    {
+    ui->monday->show();
+    ui->tuesday->show();
+    ui->wednesday->show();
+    ui->thursday->show();
+    ui->friday->show();
+    }
+}
+
+void Schedule_menu_::on_pushButton_5_clicked()
+{
+    Main_menu * menu= new Main_menu(this);
+    menu->show();
+    this->hide();
+}

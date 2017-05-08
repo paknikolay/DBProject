@@ -29,7 +29,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Рассписание МФТИ</string>
+     <string>Расписание МФТИ</string>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton_2">

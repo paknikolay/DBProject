@@ -18,6 +18,9 @@ public:
     ~Schedule_shower();
     string query;
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::Schedule_shower *ui;
 };

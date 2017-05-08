@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>804</width>
+    <height>465</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -54,12 +54,15 @@
       <height>31</height>
      </rect>
     </property>
+    <property name="readOnly">
+     <bool>false</bool>
+    </property>
    </widget>
    <widget class="QLabel" name="label_2">
     <property name="geometry">
      <rect>
-      <x>270</x>
-      <y>190</y>
+      <x>260</x>
+      <y>230</y>
       <width>271</width>
       <height>21</height>
      </rect>
@@ -87,10 +90,13 @@
     </property>
    </widget>
    <widget class="QRadioButton" name="first">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>140</y>
+      <x>360</x>
+      <y>40</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -105,10 +111,13 @@
     </property>
    </widget>
    <widget class="QRadioButton" name="fourth">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>230</y>
+      <x>360</x>
+      <y>130</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -213,10 +222,13 @@
     </property>
    </widget>
    <widget class="QRadioButton" name="third">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>201</y>
+      <x>360</x>
+      <y>101</y>
       <width>105</width>
       <height>21</height>
      </rect>
@@ -269,8 +281,8 @@
    <widget class="QDialogButtonBox" name="buttonBox">
     <property name="geometry">
      <rect>
-      <x>310</x>
-      <y>240</y>
+      <x>300</x>
+      <y>260</y>
       <width>175</width>
       <height>34</height>
      </rect>
@@ -318,8 +330,8 @@
    <widget class="QPushButton" name="pushButton_3">
     <property name="geometry">
      <rect>
-      <x>590</x>
-      <y>363</y>
+      <x>650</x>
+      <y>350</y>
       <width>111</width>
       <height>41</height>
      </rect>
@@ -334,10 +346,13 @@
     </property>
    </widget>
    <widget class="QRadioButton" name="second">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
     <property name="geometry">
      <rect>
-      <x>120</x>
-      <y>170</y>
+      <x>360</x>
+      <y>70</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -354,8 +369,8 @@
    <widget class="QRadioButton" name="sixth">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>170</y>
+      <x>360</x>
+      <y>190</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -372,8 +387,8 @@
    <widget class="QRadioButton" name="fifth">
     <property name="geometry">
      <rect>
-      <x>560</x>
-      <y>140</y>
+      <x>360</x>
+      <y>160</y>
       <width>105</width>
       <height>22</height>
      </rect>
@@ -393,8 +408,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>800</width>
-     <height>25</height>
+     <width>804</width>
+     <height>30</height>
     </rect>
    </property>
   </widget>

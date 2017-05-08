@@ -4,6 +4,7 @@
 #include "schedule_shower.h"
 #include "search_menu.h"
 #include "schedule_menu_.h"
+#include "sign_up.h"
 Main_menu::Main_menu(QWidget *parent, User user) :
     QMainWindow(parent),
     ui(new Ui::Main_menu)
@@ -48,4 +49,12 @@ void Main_menu::on_pushButton_clicked()
     Schedule_menu_ *men= new Schedule_menu_(this);
             this->hide();
             men->show();
+}
+
+void Main_menu::on_pushButton_5_clicked()
+{
+    Sign_up * sign = new Sign_up(this);
+    this->hide();
+    sign->show();
+
 }

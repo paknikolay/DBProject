@@ -1,5 +1,6 @@
 #include "schedule_shower.h"
 #include "ui_schedule_shower.h"
+#include "main_menu.h"
 #include <pqxx/pqxx>
 
 Schedule_shower::Schedule_shower(QWidget *parent, string query) :
@@ -42,4 +43,11 @@ Schedule_shower::Schedule_shower(QWidget *parent, string query) :
 Schedule_shower::~Schedule_shower()
 {
     delete ui;
+}
+
+void Schedule_shower::on_pushButton_2_clicked()
+{
+    Main_menu* menu = new Main_menu(this);
+    menu->show();
+    this->hide();
 }

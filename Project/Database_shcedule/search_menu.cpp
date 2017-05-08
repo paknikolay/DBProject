@@ -1,6 +1,7 @@
 #include "search_menu.h"
 #include "ui_search_menu.h"
 #include "schedule_shower.h"
+#include "main_menu.h"
 #include <string>
 using std::string;
 Search_menu::Search_menu(QWidget *parent) :
@@ -47,4 +48,11 @@ void Search_menu::on_pushButton_clicked()
 
 
                                    ;
+}
+
+void Search_menu::on_pushButton_3_clicked()
+{
+    Main_menu* menu = new Main_menu(this);
+    menu->show();
+    this->hide();
 }
