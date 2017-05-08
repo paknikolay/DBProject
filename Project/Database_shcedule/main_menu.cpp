@@ -1,6 +1,9 @@
 #include "main_menu.h"
+#include "student_time.h"
 #include "ui_main_menu.h"
 #include "schedule_shower.h"
+#include "search_menu.h"
+#include "schedule_menu_.h"
 Main_menu::Main_menu(QWidget *parent, User user) :
     QMainWindow(parent),
     ui(new Ui::Main_menu)
@@ -22,4 +25,27 @@ void Main_menu::on_pushButton_2_clicked()
             + ")";
    Schedule_shower* shower = new Schedule_shower(this, query);
    shower->show();
+   this->hide();
+}
+
+void Main_menu::on_pushButton_4_clicked()
+{
+    student_time* time = new student_time(this);
+    time->show();
+    this->hide();
+}
+
+void Main_menu::on_pushButton_3_clicked()
+{
+    Search_menu* search = new Search_menu(this);
+    this->hide();
+    search->show();
+}
+
+
+void Main_menu::on_pushButton_clicked()
+{
+    Schedule_menu_ *men= new Schedule_menu_(this);
+            this->hide();
+            men->show();
 }

@@ -15,6 +15,9 @@ public:
     explicit student_time(QWidget *parent = 0);
     ~student_time();
 
+private slots:
+    void on_pushButton_2_clicked();
+
 private:
     Ui::student_time *ui;
 };

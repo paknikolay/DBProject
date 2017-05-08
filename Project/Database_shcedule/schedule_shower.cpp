@@ -8,9 +8,8 @@ Schedule_shower::Schedule_shower(QWidget *parent, string query) :
 {
     ui->setupUi(this);
     this-> query = query;
-    ui->label_2->setText(QString::fromStdString(query));
+    ui->textBrowser->setText(QString::fromStdString(query));
     pqxx::connection c ("dbname=my_database user=user_1 password=password port=5432 host=localhost");
-
     pqxx::work txn(c);
     pqxx::result r = txn.exec(query);
 

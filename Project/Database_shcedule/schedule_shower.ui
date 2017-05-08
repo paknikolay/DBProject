@@ -96,17 +96,14 @@
      <string>Результат запроса</string>
     </property>
    </widget>
-   <widget class="QLabel" name="label_2">
+   <widget class="QTextBrowser" name="textBrowser">
     <property name="geometry">
      <rect>
-      <x>40</x>
-      <y>270</y>
-      <width>731</width>
-      <height>251</height>
+      <x>50</x>
+      <y>240</y>
+      <width>711</width>
+      <height>192</height>
      </rect>
-    </property>
-    <property name="text">
-     <string>TextLabel</string>
     </property>
    </widget>
   </widget>

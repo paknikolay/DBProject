@@ -25,5 +25,5 @@ void Sign_up::on_pushButton_clicked()
 
    Main_menu* m = new Main_menu(this, user);
    m->show();
-
+   this->hide();
 }

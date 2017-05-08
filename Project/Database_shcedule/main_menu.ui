@@ -92,7 +92,7 @@
      </font>
     </property>
     <property name="text">
-     <string>Свободное временя</string>
+     <string>Добавление пары</string>
     </property>
    </widget>
    <widget class="QLabel" name="label">
