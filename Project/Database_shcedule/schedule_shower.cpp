@@ -51,3 +51,8 @@ void Schedule_shower::on_pushButton_2_clicked()
     menu->show();
     this->hide();
 }
+
+void Schedule_shower::on_pushButton_3_clicked()
+{
+    close();
+}

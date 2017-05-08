@@ -175,3 +175,8 @@ void Schedule_menu_::on_pushButton_5_clicked()
     menu->show();
     this->hide();
 }
+
+void Schedule_menu_::on_pushButton_4_clicked()
+{
+    close();
+}

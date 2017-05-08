@@ -58,3 +58,8 @@ void Main_menu::on_pushButton_5_clicked()
     sign->show();
 
 }
+
+void Main_menu::on_pushButton_6_clicked()
+{
+    close();
+}
