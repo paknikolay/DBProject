@@ -1,0 +1,120 @@
+#include <fstream>
+#include <string>
+using std::string;
+using std::ifstream;
+using std::ofstream;
+string tostr(int x){
+    string s;
+    while(x>0){
+        switch (x%10){
+            case 0:
+                s+="0";
+                break;
+            case 1:
+                s+="1";
+                break;
+            case 2:
+                s+="2";
+                break;
+            case 3:
+                s+="3";
+                break;
+            case 4:
+                s+="4";
+                break;
+            case 5:
+                s+="5";
+                break;
+            case 6:
+                s+="6";
+                break;
+            case 7:
+                s+="7";
+                break;
+            case 8:
+                s+="8";
+                break;
+            default:
+                s+="9";
+                break;
+        }
+        x/=10;
+    }
+    s.reserve();
+    string s1="";
+    bool p = true;
+    for (auto c:s) {
+        if (p) {
+            if (c != '0') {
+                s1 += c;
+                p = false;
+            }
+        } else {
+            s1 += c;
+        }
+    }
+    return s1;
+}
+
+string getemail(){
+    int a = abs((rand()*rand())%1000*rand());
+    string s;
+    switch (a%10){
+        case 0:
+            s+="@rambler.ru";
+            break;
+        case 1:
+            s+="@gomail.com.ua";
+            break;
+        case 2:
+            s+="@aport.ru";
+            break;
+        case 3:
+            s+="@email.ru";
+            break;
+        case 4:
+            s+="@inbox.ru";
+            break;
+        case 5:
+            s+="@mail.ru";
+            break;
+        case 6:
+            s+="@gmail.com";
+            break;
+        case 7:
+            s+="@zmail.ru";
+            break;
+        case 8:
+            s+="@sendmail.ru";
+            break;
+        default:
+            s+="@hotmail.ru";
+            break;
+    }
+    return s;
+}
+int main() {
+
+    ifstream fname("FIO.txt");
+    ofstream fperson("person.csv");
+    ifstream fphone("phone.txt");
+    ifstream fvk("vk.txt");
+    ifstream faddress("address.txt");
+
+    for (int i = 0; i < 100; ++i) {
+        string s="", name, surname, patronymic,phone,address,vk;
+        fname>>surname;
+        fname>>name;
+        fname>>patronymic;
+        fphone>>phone;
+        fvk>>vk;
+        getline(faddress, address);
+
+        int age = (abs(rand()%90))+10;
+        s+= name + ", " + surname +", "+ patronymic + ", " + tostr(age) + ", '"+ address +"' , "+ phone
+            + ", " + surname + tostr(age) + getemail() + ", " + vk;
+        fperson<<s<<"\n";
+
+    }
+    return 0;
+}
