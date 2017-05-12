@@ -5,7 +5,7 @@ CREATE TABLE person(
  patronymic VARCHAR(100),
  age INTEGER NOT NULL,
  address VARCHAR(100),
- phone INTEGER,
+ phone VARCHAR(100),
  email VARCHAR(100),
  vk VARCHAR(100)
 );
@@ -42,24 +42,25 @@ CREATE TABLE subject(
 
 
 
+CREATE TABLE groups(
+group_no INTEGER PRIMARY KEY
+);
+
+
 CREATE TABLE student(
 student_id INTEGER PRIMARY KEY REFERENCES person(person_id),
 data_of_enrollment DATE NOT NULL,
 degree varchar(100) REFERENCES degrees(degree) NOT NULL,
 course INTEGER NOT NULL,
 department_id INTEGER REFERENCES department(department_id) NOT NULL,
+group_no INTEGER REFERENCES groups(group_no) NOT NULL,
 dormitory INTEGER
 );
 
 
-CREATE TABLE groups(
-group_no INTEGER REFERENCES student(student_id) PRIMARY KEY,
-president_id INTEGER NOT NULL REFERENCES student(student_id)
-);
-
-CREATE TABLE student_group(
-  student_id INTEGER NOT NULL REFERENCES student(student_id),
-  group_no INTEGER NOT NULL REFERENCES groups(group_no)
+CREATE TABLE student_group_president (
+ president_id INTEGER NOT NULL REFERENCES student (student_id),
+ group_no     INTEGER NOT NULL REFERENCES groups (group_no)
 );
 
 CREATE TABLE chair_teacher (
@@ -82,20 +83,18 @@ CREATE INDEX ON schedule(group_no);
 
 
 
-
-drop TABLE  chair;
-drop TABLE  person;
-DROP TABLE teachers;
-drop TABLE  department;
-drop TABLE department_chair;
-DROP TABLE chair_teacher;
-drop TABLE  subject;
-DROP TABLE student;
-DROP TABLE groups;
-DROP  TABLE degrees;
-drop TABLE  schedule;
-
-
+drop table student_group_president CASCADE;
+drop TABLE  chair CASCADE;
+drop TABLE person CASCADE ;
+DROP TABLE teachers CASCADE;
+drop TABLE  department CASCADE;
+drop TABLE department_chair CASCADE;
+DROP TABLE chair_teacher CASCADE;
+drop TABLE  subject CASCADE;
+DROP TABLE student CASCADE;
+DROP TABLE groups CASCADE;
+DROP  TABLE degrees CASCADE;
+drop TABLE  schedule CASCADE;
 
 
 
@@ -105,4 +104,35 @@ drop TABLE  schedule;
 
 
 
-COPY person (name, surname, patronymic, age, address, phone, email, vk)  FROM 'person.csv' DELIMITER ',' CSV HEADER;
+
+
+
+
+COPY person (name, surname, patronymic, age, address, phone, email, vk)  FROM '/home/nikolai/QT/person.csv' DELIMITER ',' CSV HEADER;
+
+INSERT INTO degrees VALUES
+ ('bachelor'),
+ ('master');
+
+INSERT INTO department(department_id, department_name)
+VALUES
+ ('9', 'DIHCT'),
+ ('1', 'DREC'),
+ ('3', 'DASR');
+
+INSERT INTO teachers SELECT person_id FROM person ORDER BY person_id LIMIT 30;
+
+INSERT INTO groups VALUES
+ ('494'),
+ ('496'),
+ ('596'),
+ ('594'),
+ ('231'),
+ ('633'),
+ ('631'),
+ ('317'),
+ ('315');
+
+
+COPY student(student_id, data_of_enrollment, degree, course, department_id, dormitory, group_no) FROM '/home/nikolai/QT/student.csv' DELIMITER ',' CSV HEADER;
+
