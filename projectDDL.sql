@@ -41,9 +41,6 @@ CREATE TABLE subject(
 );
 
 
-CREATE TABLE groups(
-group_no INTEGER PRIMARY KEY
-);
 
 CREATE TABLE student(
 student_id INTEGER PRIMARY KEY REFERENCES person(person_id),
@@ -51,14 +48,17 @@ data_of_enrollment DATE NOT NULL,
 degree varchar(100) REFERENCES degrees(degree) NOT NULL,
 course INTEGER NOT NULL,
 department_id INTEGER REFERENCES department(department_id) NOT NULL,
-dormitory INTEGER,
-group_no INTEGER NOT NULL REFERENCES groups(group_no)
+dormitory INTEGER
 );
 
 
+CREATE TABLE groups(
+group_no INTEGER REFERENCES student(student_id) PRIMARY KEY,
+president_id INTEGER NOT NULL REFERENCES student(student_id)
+);
 
-CREATE TABLE president_group(
-  president_id INTEGER NOT NULL REFERENCES student(student_id),
+CREATE TABLE student_group(
+  student_id INTEGER NOT NULL REFERENCES student(student_id),
   group_no INTEGER NOT NULL REFERENCES groups(group_no)
 );
 
@@ -69,32 +69,28 @@ chair_id INTEGER REFERENCES teachers(teacher_id) NOT NULL
 
 CREATE TABLE schedule(
  shedule_id BIGSERIAL NOT NULL  PRIMARY KEY,
- day VARCHAR(100),
+ day VARCHAR(100) CONSTRAINT day_constraint CHECK (day IN ('monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday')),
  time TIME NOT NULL,
  lecture_hall_no INTEGER NOT NULL,
  building VARCHAR(100),
  teacher_id INTEGER NOT NULL REFERENCES teachers(teacher_id),
  group_no INTEGER NOT NULL REFERENCES groups(group_no),
  subject_id INTEGER NOT NULL REFERENCES subject(subject_id),
- subject_type VARCHAR(100) NOT NULL
+ subjrect_type VARCHAR(100) NOT NULL
 );
-
 CREATE INDEX ON schedule(group_no);
 
 
 
 
-
-
-drop TABLE  schedule;
-DROP  TABLE student_group;
-DROP TABLE groups;
-DROP TABLE student;
-drop TABLE  subject;
+drop TABLE  chair;
+drop TABLE  person;
+DROP TABLE teachers;
+drop TABLE  department;
 drop TABLE department_chair;
 DROP TABLE chair_teacher;
-drop TABLE  chair;
-drop TABLE  department;
-DROP TABLE teachers;
-drop TABLE  person;
+drop TABLE  subject;
+DROP TABLE student;
+DROP TABLE groups;
 DROP  TABLE degrees;
+drop TABLE  schedule;
