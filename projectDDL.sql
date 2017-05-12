@@ -94,3 +94,15 @@ DROP TABLE student;
 DROP TABLE groups;
 DROP  TABLE degrees;
 drop TABLE  schedule;
+
+
+
+
+
+
+
+
+
+
+
+COPY person (name, surname, patronymic, age, address, phone, email, vk)  FROM 'person.csv' DELIMITER ',' CSV HEADER;
