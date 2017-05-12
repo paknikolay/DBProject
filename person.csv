@@ -1,101 +1,100 @@
-name, surname, patronimic, age,  address, phone, email, vk
-Nona, Ershova, Afanasievna, 38, 'Mitino Parkovaya street 14' , 79068686861, Ershova38@rambler.ru, 4527
-Svyatoslav, Gaiduchenko, Vladislavovich, 33, 'Mitino Parkovaya street 30' , 79086201472, Gaiduchenko33@sendmail.ru, 200086
-Vladlen, Svechnikov, Rodionovich, 97, 'Mitino Parkovaya Street 31' , 79086250150, Svechnikov97@sendmail.ru, 658660
-Roman, Lyagushov, Bronislavovich, 6, 'Mitino Parkovaya Street house 29' , 79096365835, Lyagushov6@gmail.com, 1008892
-Faina, Negutorova, Zakharovna, 7, 'Mitino Central street house 2' , 79096408060, Negutorova7@rambler.ru, 1208931
-Emma, Golovina, Iosifovna, 18, 'Mitino Central street house 6' , 79100158654, Golovina18@rambler.ru, 1677259
-Izyaslav, Yermushin, Nikanorovich, 27, 'Mitino Central street house 9' , 79100158920, Yermushin27@inbox.ru, 1715863
-Philip, Ivanov, Nikolayevich, 74, 'Mitino Central street house 19' , 79100158922, Ivanov74@gmail.com, 1857507
-Lilia, Yozhova, Timofeevna, 28, 'Mitino Parkovaya street house 7' , 79100158930, Yozhova28@gmail.com, 2138067
-Serafim, Smyshlyaev, Trofimovich, 38, 'Pokrovskoe-Streshnevo Volokolamsky travel 1' , 79100159083, Smyshlyaev38@inbox.ru, 2145122
-Anisya, Burtseva, Karpovna, 97, 'Pokrovskoe-Streshnevo Volokolamskoe Highway 100 Building' , 79100159085, Burtseva97@zmail.ru, 2290435
-Kondraty, Pyarin, Danilevich, 42, 'Pokrovskoe-Streshnevo Volokolamskoe Highway Building 100 Building 1' , 79100159401, Pyarin42@sendmail.ru, 2298226
-Renata, Babinova, Timofeevna, 57, 'Pokrovskoe-Streshnevo Volokolamskoe highway house 108' , 79100159894, Babinova57@aport.ru, 2417127
-Ruslan, Yaikbaev, Izyaslavovich, 11, 'Pokrovskoe-Streshnevo Volokolamskoe Highway 110' , 79104173113, Yaikbaev11@aport.ru, 2494857
-Renata, Yunevich, Trofimovna, 24, 'Pokrovskoe-Streshnevo Medical travel house 2' , 79104208079, Yunevich24@sendmail.ru, 2497125
-Renata, Lytkina, Potapovna, 52, 'Pokrovskoe-Streshnevo Polessky travel 8' , 79104259408, Lytkina52@gmail.com, 2531563
-Dominika, Chirkova, Trofimovna, 66, 'Pokrovskoe-Streshnevo Polessky travel 10' , 79104659875, Chirkova66@aport.ru, 2610335
-Roman, Anikeev, Zinovievich, 32, 'Pokrovskoe-Streshnevo Polesskiy Proezd house 12' , 79104910897, Anikeev32@sendmail.ru, 2737757
-Inga, Yablokova, Fedotovna, 28, 'Pokrovskoe-Streshnevo travel Stratonavtov house 13 building 1' , 79110606010, Yablokova28@inbox.ru, 2847854
-Efrem, Shenterayakov, Serafimovich, 48, 'Pokrovskoe-Streshnevo travel Stratonavtov house 13 building 2' , 79111264759, Shenterayakov48@inbox.ru, 3049079
-Ernest, Reshetilov, Adrianovich, 71, 'Northern Tushino Planernaya Street Building 16 Building 4' , 79111400578, Reshetilov71@inbox.ru, 3457916
-Nikon, Podshivalov, Sigizmuntovich, 87, 'Northern Tushino Svobody street house 67 building 1' , 79111404851, Podshivalov87@rambler.ru, 3810145
-Inga, Naumova, Kuzmevna, 45, 'Northern Tushino Svobody street house 67 building 2' , 79111924490, Naumova45@gmail.com, 3979014
-Andrey, Kazarezov, Zakharovich, 63, 'Northern Tushino Svobody street house 67 building 3' , 79111926195, Kazarezov63@sendmail.ru, 4270812
-Grigory, Palvanov, Adamovich, 62, 'Northern Tushino Fomichevo st house 2' , 79111968532, Palvanov62@inbox.ru, 4416121
-Veniamin, Dobrolyubov, Valerievich, 55, 'Northern Tushino Fomichevo st house 4' , 79112385449, Dobrolyubov55@gmail.com, 4447674
-Maxim, Talalikhin, Zinovievich, 72, 'Northern Tushino Fomichevo st house 6' , 79112506798, Talalikhin72@gmail.com, 4599865
-Valentina, Drokova, Nestorovna, 79, 'Northern Tushino Fomicheva Street Building 7 Building 1' , 79112507145, Drokova79@sendmail.ru, 4632839
-Vladilen, Fomichev, Adamovich, 17, 'Northern Tushino Fomichevo st house 9' , 79112507754, Fomichev17@sendmail.ru, 4732461
-Nona, Efremova, Leonidovna, 52, 'Northern Tushino Fomichevo st house 11' , 79112698707, Efremova52@gmail.com, 4843484
-Vaclav, Korovin, Davidovich, 5, 'Northern Tushino Khimki Boulevard Building 6' , 79112889107, Korovin5@gomail.com.ua, 4870883
-Arseniy, Chichikov, Ipatovich, 79, 'Horoshevo-Mnevniki Demyan Bedny St. Building 3 building 7' , 79117427065, Chichikov79@hotmail.ru, 5349161
-Afanasy, Karev, Ippolitovich, 91, 'Khoroshevo-Mnevniki Demyan Bednoho Street house 7' , 79117929021, Karev91@gmail.com, 5351399
-Samson, Ziegler, Kirillovich, 78, 'Khoroshevo-Mnevniki picturesque street house 9 building 2' , 79119363188, Ziegler78@sendmail.ru, 5449437
-Ignaty, Volikov, Onufrievich, 68, 'Horoshevo-Mnevniki Picturesque street house 9 building 3' , 79119897102, Volikov68@rambler.ru, 5749741
-Antonina, Khaninova, Glebovna, 83, 'Horoshevo-Mnevniki picturesque street house 13 building 1' , 79123139737, Khaninova83@rambler.ru, 5812244
-Irina, Griboyedova, Vladlenovna, 31, 'Horoshevo-Mnevniki picturesque street house 13 building 2' , 79130062479, Griboyedova31@gmail.com, 6125743
-Miroslav, Yageman, Alekseevich, 89, 'Horoshevo-Mnevniki Picturesque street house 13 building 3' , 79131758492, Yageman89@inbox.ru, 6162960
-Liliya, Maksimushkina, Afanasyevna, 61, 'Horoshevo-Mnevniki Narodnogo Opolcheniya street Building 12 building 1' , 79132095232, Maksimushkina61@aport.ru, 6261164
-Sofya, Lobanova, Ivanovna, 66, 'Horoshev-Mnevniki Novikov-Priboy embankment house 10 building 3' , 79137638116, Lobanova66@gomail.com.ua, 7177188
-Vseslava, Kurepina, Romanovna, 93, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 12 building 1' , 79138977777, Kurepina93@rambler.ru, 7392010
-Valery, Lagoshina, Vyacheslavovna, 11, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 12 building 2' , 79139135020, Lagoshina11@gmail.com, 7749443
-Semen, Shipeyev, Davidovich, 45, 'Horoshev-Mnevniki Novikov-Priboy embankment house 12 building 3' , 79139309184, Shipeyev45@rambler.ru, 8053093
-Galina, Rumyantseva, Mikheevna, 78, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 14 building 2' , 79139309329, Rumyantseva78@aport.ru, 8160534
-Boris, Plakhtyurin, Zinovievich, 72, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 14 building 3' , 79139315037, Plakhtyurin72@sendmail.ru, 8244290
-Nika, Nyrkova, Alekseevna, 23, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 16 building 1' , 79139317479, Nyrkova23@aport.ru, 8498439
-Faina, Tolbaeva, Yakovlevna, 51, 'Horoshevo-Mnevniki Novikov-Priboy embankment house 16 building 2' , 79139317678, Tolbaeva51@aport.ru, 8674746
-Uliana, Kanadina, Timofeevna, 81, 'Shchukino Novushchukinskaya Street Building 6' , 79150317256, Kanadina81@gomail.com.ua, 8687049
-Emmanuil, Kerimbaev, Alekseevich, 58, 'Shchukino Aviation Street Building 61 Building 2' , 79150750672, Kerimbaev58@aport.ru, 8819050
-Alexandra, Belenkova, Olegovna, 31, 'Shchukino Aviation Street Building 63 Building 2' , 79150931355, Belenkova31@aport.ru, 9100545
-Aza, Balina, Yakovlevna, 66, 'Southern Tushino travel Donelaitis house 22' , 79150931395, Balina66@gmail.com, 9316231
-Nona, Lugovoi, Pavelovna, 36, 'South Tushino Fabricius Street Building 33 Building 2' , 79150932455, Lugovoi36@gmail.com, 9480188
-Maxim, Obraztsov, Filippovich, 44, 'South Tushino Fabricius Street Building 33 Building 4' , 79151323504, Obraztsov44@inbox.ru, 9604324
-Gennady, Levitsky, Anatolyevich, 97, 'South Tushino Fabricius Street 56 Building 1' , 79152449625, Levitsky97@gmail.com, 9693167
-Artemiy, Pechenikov, Semenovich, 48, 'South Tushino Khimki Boulevard Building 3' , 79153361976, Pechenikov48@inbox.ru, 10442669
-Lyubov, Tsutskova, Yefimovna, 9, 'South Tushino Khimki Boulevard Building 5' , 79153366940, Tsutskova9@rambler.ru, 10510565
-Vsevolod, Apothecary, Artemovich, 47, 'South Tushino Khimki Boulevard 7' , 79153547059, Apothecary47@aport.ru, 10969919
-Taras, Vitinsky, Egorovich, 48, 'South Tushino Khimki Boulevard Building 11' , 79154053766, Vitinsky48@inbox.ru, 11096403
-Lidia, Mosyakova, Davidovna, 25, 'Dolgoprudny May Day street 2 building 2' , 79154053948, Mosyakova25@rambler.ru, 11342198
-Evgeny, Kozhevnikov, Miroslavovich, 55, 'Dolgoprudny May Day street 2 building 2' , 79154054075, Kozhevnikov55@inbox.ru, 11466345
-Lyudmila, Korotchenko, Germanovna, 27, 'Dolgoprudnyi May Day street 2 building 2' , 79154402379, Korotchenko27@gmail.com, 11700449
-Modest, Pystogi, Erofeevich, 68, 'Dolgoprudny May Day street 2 building 2' , 79154957512, Pystogi68@rambler.ru, 12162967
-Lydia, Kosinova, Vsevolodovna, 18, 'Dolgoprudny May Day street 2 building 2' , 79154957648, Kosinova18@inbox.ru, 12216578
-Anfisa, Sulimova, Vsevolodovna, 14, 'Dolgoprudny May Day street 2 building 2' , 79154958428, Sulimova14@inbox.ru, 12340164
-Semyon, Radostin, Adrianovich, 4, 'Dolgoprudny May Day street 2 building 2' , 79161001837, Radostin4@gmail.com, 12509299
-Valentin, Zavrazhin, Yurievich, 25, 'Dolgoprudny May Day street 2 building 2' , 79161454977, Zavrazhin25@aport.ru, 12938781
-Kim, Enotov, Samsonovich, 25, 'Dolgoprudny May Day street 2 building 2' , 79162375122, Enotov25@aport.ru, 13041179
-Lyudmila, Ratnikova, Daniilovna, 25, 'Dolgoprudny May Day street 2 building 2' , 79162404455, Ratnikova25@rambler.ru, 13242505
-Tatyana, Gunina, Iosifovna, 27, 'Dolgoprudny May Day street Building 7 building 1' , 79163369790, Gunina27@inbox.ru, 13484355
-Antip, Yubkin, Karlovich, 84, 'Dolgoprudny May Day street Building 7 building 1' , 79163369843, Yubkin84@mail.ru, 13985040
-Moses, Dubinin, Nazarovich, 19, 'Dolgoprudny May Day street Building 7 building 1' , 79163369878, Dubinin19@gmail.com, 13986867
-Ekaterina, Ivanina, Ilyevna, 8, 'Dolgoprudny May Day street Building 7 building 1' , 79163377737, Ivanina8@gomail.com.ua, 14244662
-Nikolay, Volodin, Feliksovich, 93, 'Dolgoprudny May Day street Building 7 building 1' , 79164049990, Volodin93@gmail.com, 14357741
-Rostislav, Tobolenko, Artemovich, 38, 'Dolgoprudny May Day street Building 7 building 1' , 79164520543, Tobolenko38@gmail.com, 14530151
-Elizaveta, Goremykina, Gennadievna, 66, 'Dolgoprudny May Day street Building 7 building 1' , 79164665669, Goremykina66@inbox.ru, 15152671
-Elizaveta, Zhdanova, Ivanovna, 8, 'Dolgoprudny May Day street Building 7 building 1' , 79164739784, Zhdanova8@rambler.ru, 15163209
-Emilia, Shashlova, I., 61, 'Dolgoprudny May Day street Building 7 building 1' , 79164756358, Shashlova61@gmail.com, 15179049
-Nikanor, Lyalushkin, Natanovich, 95, 'Dolgoprudny May Day street Building 7 building 1' , 79164957361, Lyalushkin95@sendmail.ru, 15216025
-Matvey, Kolyshchinsky, Klimentovich, 86, 'Dolgoprudny May Day street Building 7 building 1' , 79164962481, Kolyshchinsky86@gmail.com, 15627501
-Anfisa, Zaplina, Ilyevna, 69, 'Dolgoprudny May Day street Building 7 building 1' , 79165038805, Zaplina69@gmail.com, 16078412
-Inessa, Tankova, Petrovna, 67, 'Dolgoprudny May Day street Building 7 building 1' , 79166216419, Tankova67@inbox.ru, 16092280
-Zlata, Shabanova, Davidovna, 14, 'Dolgoprudny May Day street Building 7 building 1' , 79166674998, Shabanova14@mail.ru, 16136300
-Zinaida, Mosentsova, Fedotovna, 19, 'Dolgoprudny May Day street Building 7 building 1' , 79167312457, Mosentsova19@gmail.com, 16437287
-Daniil, Notovich, Svyatoslavovich, 3, 'Dolgoprudny May Day street 5 building 3' , 79167635803, Notovich3@sendmail.ru, 16444373
-Avdey, Notovitch, Sigizmuntovich, 75, 'Dolgoprudny May Day street 5 building 3' , 79167747510, Notovitch75@rambler.ru, 16447212
-Andrey, Kolbin, Evgrafovich, 1, 'Dolgoprudny May Day street 5 building 3' , 79220311141, Kolbin1@inbox.ru, 16583091
-Bronislava, Wright, Iosifovna, 63, 'Dolgoprudny May Day street 5 building 3' , 79221778397, Wright63@rambler.ru, 16677020
-Kristina, Kovshevnikova, Hilarionovna, 26, 'Dolgoprudny May Day street 5 building 3' , 79222182812, Kovshevnikova26@rambler.ru, 16738174
-Andrey, Smyshlyaev, Emilevich, 59, 'Dolgoprudny May Day street 5 building 3' , 79222282391, Smyshlyaev59@rambler.ru, 16738990
-Polycarp, Kulchitsky, Matveyevich, 8, 'Dolgoprudny May Day street 5 building 3' , 79222282566, Kulchitsky8@rambler.ru, 17283336
-Evsei, Votyakov, Karlovich, 84, 'Golyanovo Baikalskaya street 16 building 3' , 79226200380, Votyakov84@gmail.com, 17292244
-Ilya, Yesipov, Ilyevich, 99, 'Golyanovo Baikalskaya Street Building 16 Building 4' , 79227064855, Yesipov99@gmail.com, 17743536
-Kazimir, Khadeev, Markovich, 22, 'Kosino-Ukhtomsky Kamov st house 1' , 79227242194, Khadeev22@inbox.ru, 17876349
-Emil, Tolstobrov, Ipatievich, 99, 'Kosino-Ukhtomsky Kamov street house 3' , 79236409000, Tolstobrov99@rambler.ru, 18011408
-Artur, Eliseev, Vladimirovich, 7, 'Kosino-Ukhtomsky Kamov street house 22 building 1' , 79250111734, Eliseev7@gmail.com, 18238359
-Vladimir, Kirsanov, Eremeevich, 99, 'Kosino-Ukhtomsky Kamov street house 22 building 2' , 79250253084, Kirsanov99@sendmail.ru, 18256450
-Efrosinya, Beschastnykh, Nikolaevna, 15, 'Kosino-Ukhtomsky Kamov street house 24 building 1' , 79250282945, Beschastnykh15@sendmail.ru, 18266864
-Svetlana, Yemelyanova, Igorevna, 14, 'Perovo Anosov st house 7' , 79250444000, Yemelyanova14@sendmail.ru, 18380033
-Valeria, Budylina, Gennadievna, 41, 'Perovo Anosov st house 9' , 79250844000, Budylina41@sendmail.ru, 18421024
-Trofimovna, Milina, Milina, 48, 'Perovo Anosov st house 11' , 79250845000, Milina48@aport.ru, 18557579
+Nona,Ershova,Afanasievna,38,'MitinoParkovayastreet14',79068686861,Ershova38@rambler.ru,4527
+Svyatoslav,Gaiduchenko,Vladislavovich,33,'MitinoParkovayastreet30',79086201472,Gaiduchenko33@sendmail.ru,200086
+Vladlen,Svechnikov,Rodionovich,97,'MitinoParkovayaStreet31',79086250150,Svechnikov97@sendmail.ru,658660
+Roman,Lyagushov,Bronislavovich,6,'MitinoParkovayaStreethouse29',79096365835,Lyagushov6@gmail.com,1008892
+Faina,Negutorova,Zakharovna,7,'MitinoCentralstreethouse2',79096408060,Negutorova7@rambler.ru,1208931
+Emma,Golovina,Iosifovna,18,'MitinoCentralstreethouse6',79100158654,Golovina18@rambler.ru,1677259
+Izyaslav,Yermushin,Nikanorovich,27,'MitinoCentralstreethouse9',79100158920,Yermushin27@inbox.ru,1715863
+Philip,Ivanov,Nikolayevich,74,'MitinoCentralstreethouse19',79100158922,Ivanov74@gmail.com,1857507
+Lilia,Yozhova,Timofeevna,28,'MitinoParkovayastreethouse7',79100158930,Yozhova28@gmail.com,2138067
+Serafim,Smyshlyaev,Trofimovich,38,'Pokrovskoe-StreshnevoVolokolamskytravel1',79100159083,Smyshlyaev38@inbox.ru,2145122
+Anisya,Burtseva,Karpovna,97,'Pokrovskoe-StreshnevoVolokolamskoeHighway100Building',79100159085,Burtseva97@zmail.ru,2290435
+Kondraty,Pyarin,Danilevich,42,'Pokrovskoe-StreshnevoVolokolamskoeHighwayBuilding100Building1',79100159401,Pyarin42@sendmail.ru,2298226
+Renata,Babinova,Timofeevna,57,'Pokrovskoe-StreshnevoVolokolamskoehighwayhouse108',79100159894,Babinova57@aport.ru,2417127
+Ruslan,Yaikbaev,Izyaslavovich,11,'Pokrovskoe-StreshnevoVolokolamskoeHighway110',79104173113,Yaikbaev11@aport.ru,2494857
+Renata,Yunevich,Trofimovna,24,'Pokrovskoe-StreshnevoMedicaltravelhouse2',79104208079,Yunevich24@sendmail.ru,2497125
+Renata,Lytkina,Potapovna,52,'Pokrovskoe-StreshnevoPolesskytravel8',79104259408,Lytkina52@gmail.com,2531563
+Dominika,Chirkova,Trofimovna,66,'Pokrovskoe-StreshnevoPolesskytravel10',79104659875,Chirkova66@aport.ru,2610335
+Roman,Anikeev,Zinovievich,32,'Pokrovskoe-StreshnevoPolesskiyProezdhouse12',79104910897,Anikeev32@sendmail.ru,2737757
+Inga,Yablokova,Fedotovna,28,'Pokrovskoe-StreshnevotravelStratonavtovhouse13building1',79110606010,Yablokova28@inbox.ru,2847854
+Efrem,Shenterayakov,Serafimovich,48,'Pokrovskoe-StreshnevotravelStratonavtovhouse13building2',79111264759,Shenterayakov48@inbox.ru,3049079
+Ernest,Reshetilov,Adrianovich,71,'NorthernTushinoPlanernayaStreetBuilding16Building4',79111400578,Reshetilov71@inbox.ru,3457916
+Nikon,Podshivalov,Sigizmuntovich,87,'NorthernTushinoSvobodystreethouse67building1',79111404851,Podshivalov87@rambler.ru,3810145
+Inga,Naumova,Kuzmevna,45,'NorthernTushinoSvobodystreethouse67building2',79111924490,Naumova45@gmail.com,3979014
+Andrey,Kazarezov,Zakharovich,63,'NorthernTushinoSvobodystreethouse67building3',79111926195,Kazarezov63@sendmail.ru,4270812
+Grigory,Palvanov,Adamovich,62,'NorthernTushinoFomichevosthouse2',79111968532,Palvanov62@inbox.ru,4416121
+Veniamin,Dobrolyubov,Valerievich,55,'NorthernTushinoFomichevosthouse4',79112385449,Dobrolyubov55@gmail.com,4447674
+Maxim,Talalikhin,Zinovievich,72,'NorthernTushinoFomichevosthouse6',79112506798,Talalikhin72@gmail.com,4599865
+Valentina,Drokova,Nestorovna,79,'NorthernTushinoFomichevaStreetBuilding7Building1',79112507145,Drokova79@sendmail.ru,4632839
+Vladilen,Fomichev,Adamovich,17,'NorthernTushinoFomichevosthouse9',79112507754,Fomichev17@sendmail.ru,4732461
+Nona,Efremova,Leonidovna,52,'NorthernTushinoFomichevosthouse11',79112698707,Efremova52@gmail.com,4843484
+Vaclav,Korovin,Davidovich,5,'NorthernTushinoKhimkiBoulevardBuilding6',79112889107,Korovin5@gomail.com.ua,4870883
+Arseniy,Chichikov,Ipatovich,79,'Horoshevo-MnevnikiDemyanBednySt.Building3building7',79117427065,Chichikov79@hotmail.ru,5349161
+Afanasy,Karev,Ippolitovich,91,'Khoroshevo-MnevnikiDemyanBednohoStreethouse7',79117929021,Karev91@gmail.com,5351399
+Samson,Ziegler,Kirillovich,78,'Khoroshevo-Mnevnikipicturesquestreethouse9building2',79119363188,Ziegler78@sendmail.ru,5449437
+Ignaty,Volikov,Onufrievich,68,'Horoshevo-MnevnikiPicturesquestreethouse9building3',79119897102,Volikov68@rambler.ru,5749741
+Antonina,Khaninova,Glebovna,83,'Horoshevo-Mnevnikipicturesquestreethouse13building1',79123139737,Khaninova83@rambler.ru,5812244
+Irina,Griboyedova,Vladlenovna,31,'Horoshevo-Mnevnikipicturesquestreethouse13building2',79130062479,Griboyedova31@gmail.com,6125743
+Miroslav,Yageman,Alekseevich,89,'Horoshevo-MnevnikiPicturesquestreethouse13building3',79131758492,Yageman89@inbox.ru,6162960
+Liliya,Maksimushkina,Afanasyevna,61,'Horoshevo-MnevnikiNarodnogoOpolcheniyastreetBuilding12building1',79132095232,Maksimushkina61@aport.ru,6261164
+Sofya,Lobanova,Ivanovna,66,'Horoshev-MnevnikiNovikov-Priboyembankmenthouse10building3',79137638116,Lobanova66@gomail.com.ua,7177188
+Vseslava,Kurepina,Romanovna,93,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse12building1',79138977777,Kurepina93@rambler.ru,7392010
+Valery,Lagoshina,Vyacheslavovna,11,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse12building2',79139135020,Lagoshina11@gmail.com,7749443
+Semen,Shipeyev,Davidovich,45,'Horoshev-MnevnikiNovikov-Priboyembankmenthouse12building3',79139309184,Shipeyev45@rambler.ru,8053093
+Galina,Rumyantseva,Mikheevna,78,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse14building2',79139309329,Rumyantseva78@aport.ru,8160534
+Boris,Plakhtyurin,Zinovievich,72,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse14building3',79139315037,Plakhtyurin72@sendmail.ru,8244290
+Nika,Nyrkova,Alekseevna,23,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse16building1',79139317479,Nyrkova23@aport.ru,8498439
+Faina,Tolbaeva,Yakovlevna,51,'Horoshevo-MnevnikiNovikov-Priboyembankmenthouse16building2',79139317678,Tolbaeva51@aport.ru,8674746
+Uliana,Kanadina,Timofeevna,81,'ShchukinoNovushchukinskayaStreetBuilding6',79150317256,Kanadina81@gomail.com.ua,8687049
+Emmanuil,Kerimbaev,Alekseevich,58,'ShchukinoAviationStreetBuilding61Building2',79150750672,Kerimbaev58@aport.ru,8819050
+Alexandra,Belenkova,Olegovna,31,'ShchukinoAviationStreetBuilding63Building2',79150931355,Belenkova31@aport.ru,9100545
+Aza,Balina,Yakovlevna,66,'SouthernTushinotravelDonelaitishouse22',79150931395,Balina66@gmail.com,9316231
+Nona,Lugovoi,Pavelovna,36,'SouthTushinoFabriciusStreetBuilding33Building2',79150932455,Lugovoi36@gmail.com,9480188
+Maxim,Obraztsov,Filippovich,44,'SouthTushinoFabriciusStreetBuilding33Building4',79151323504,Obraztsov44@inbox.ru,9604324
+Gennady,Levitsky,Anatolyevich,97,'SouthTushinoFabriciusStreet56Building1',79152449625,Levitsky97@gmail.com,9693167
+Artemiy,Pechenikov,Semenovich,48,'SouthTushinoKhimkiBoulevardBuilding3',79153361976,Pechenikov48@inbox.ru,10442669
+Lyubov,Tsutskova,Yefimovna,9,'SouthTushinoKhimkiBoulevardBuilding5',79153366940,Tsutskova9@rambler.ru,10510565
+Vsevolod,Apothecary,Artemovich,47,'SouthTushinoKhimkiBoulevard7',79153547059,Apothecary47@aport.ru,10969919
+Taras,Vitinsky,Egorovich,48,'SouthTushinoKhimkiBoulevardBuilding11',79154053766,Vitinsky48@inbox.ru,11096403
+Lidia,Mosyakova,Davidovna,25,'DolgoprudnyMayDaystreet2building2',79154053948,Mosyakova25@rambler.ru,11342198
+Evgeny,Kozhevnikov,Miroslavovich,55,'DolgoprudnyMayDaystreet2building2',79154054075,Kozhevnikov55@inbox.ru,11466345
+Lyudmila,Korotchenko,Germanovna,27,'DolgoprudnyiMayDaystreet2building2',79154402379,Korotchenko27@gmail.com,11700449
+Modest,Pystogi,Erofeevich,68,'DolgoprudnyMayDaystreet2building2',79154957512,Pystogi68@rambler.ru,12162967
+Lydia,Kosinova,Vsevolodovna,18,'DolgoprudnyMayDaystreet2building2',79154957648,Kosinova18@inbox.ru,12216578
+Anfisa,Sulimova,Vsevolodovna,14,'DolgoprudnyMayDaystreet2building2',79154958428,Sulimova14@inbox.ru,12340164
+Semyon,Radostin,Adrianovich,4,'DolgoprudnyMayDaystreet2building2',79161001837,Radostin4@gmail.com,12509299
+Valentin,Zavrazhin,Yurievich,25,'DolgoprudnyMayDaystreet2building2',79161454977,Zavrazhin25@aport.ru,12938781
+Kim,Enotov,Samsonovich,25,'DolgoprudnyMayDaystreet2building2',79162375122,Enotov25@aport.ru,13041179
+Lyudmila,Ratnikova,Daniilovna,25,'DolgoprudnyMayDaystreet2building2',79162404455,Ratnikova25@rambler.ru,13242505
+Tatyana,Gunina,Iosifovna,27,'DolgoprudnyMayDaystreetBuilding7building1',79163369790,Gunina27@inbox.ru,13484355
+Antip,Yubkin,Karlovich,84,'DolgoprudnyMayDaystreetBuilding7building1',79163369843,Yubkin84@mail.ru,13985040
+Moses,Dubinin,Nazarovich,19,'DolgoprudnyMayDaystreetBuilding7building1',79163369878,Dubinin19@gmail.com,13986867
+Ekaterina,Ivanina,Ilyevna,8,'DolgoprudnyMayDaystreetBuilding7building1',79163377737,Ivanina8@gomail.com.ua,14244662
+Nikolay,Volodin,Feliksovich,93,'DolgoprudnyMayDaystreetBuilding7building1',79164049990,Volodin93@gmail.com,14357741
+Rostislav,Tobolenko,Artemovich,38,'DolgoprudnyMayDaystreetBuilding7building1',79164520543,Tobolenko38@gmail.com,14530151
+Elizaveta,Goremykina,Gennadievna,66,'DolgoprudnyMayDaystreetBuilding7building1',79164665669,Goremykina66@inbox.ru,15152671
+Elizaveta,Zhdanova,Ivanovna,8,'DolgoprudnyMayDaystreetBuilding7building1',79164739784,Zhdanova8@rambler.ru,15163209
+Emilia,Shashlova,I.,61,'DolgoprudnyMayDaystreetBuilding7building1',79164756358,Shashlova61@gmail.com,15179049
+Nikanor,Lyalushkin,Natanovich,95,'DolgoprudnyMayDaystreetBuilding7building1',79164957361,Lyalushkin95@sendmail.ru,15216025
+Matvey,Kolyshchinsky,Klimentovich,86,'DolgoprudnyMayDaystreetBuilding7building1',79164962481,Kolyshchinsky86@gmail.com,15627501
+Anfisa,Zaplina,Ilyevna,69,'DolgoprudnyMayDaystreetBuilding7building1',79165038805,Zaplina69@gmail.com,16078412
+Inessa,Tankova,Petrovna,67,'DolgoprudnyMayDaystreetBuilding7building1',79166216419,Tankova67@inbox.ru,16092280
+Zlata,Shabanova,Davidovna,14,'DolgoprudnyMayDaystreetBuilding7building1',79166674998,Shabanova14@mail.ru,16136300
+Zinaida,Mosentsova,Fedotovna,19,'DolgoprudnyMayDaystreetBuilding7building1',79167312457,Mosentsova19@gmail.com,16437287
+Daniil,Notovich,Svyatoslavovich,3,'DolgoprudnyMayDaystreet5building3',79167635803,Notovich3@sendmail.ru,16444373
+Avdey,Notovitch,Sigizmuntovich,75,'DolgoprudnyMayDaystreet5building3',79167747510,Notovitch75@rambler.ru,16447212
+Andrey,Kolbin,Evgrafovich,1,'DolgoprudnyMayDaystreet5building3',79220311141,Kolbin1@inbox.ru,16583091
+Bronislava,Wright,Iosifovna,63,'DolgoprudnyMayDaystreet5building3',79221778397,Wright63@rambler.ru,16677020
+Kristina,Kovshevnikova,Hilarionovna,26,'DolgoprudnyMayDaystreet5building3',79222182812,Kovshevnikova26@rambler.ru,16738174
+Andrey,Smyshlyaev,Emilevich,59,'DolgoprudnyMayDaystreet5building3',79222282391,Smyshlyaev59@rambler.ru,16738990
+Polycarp,Kulchitsky,Matveyevich,8,'DolgoprudnyMayDaystreet5building3',79222282566,Kulchitsky8@rambler.ru,17283336
+Evsei,Votyakov,Karlovich,84,'GolyanovoBaikalskayastreet16building3',79226200380,Votyakov84@gmail.com,17292244
+Ilya,Yesipov,Ilyevich,99,'GolyanovoBaikalskayaStreetBuilding16Building4',79227064855,Yesipov99@gmail.com,17743536
+Kazimir,Khadeev,Markovich,22,'Kosino-UkhtomskyKamovsthouse1',79227242194,Khadeev22@inbox.ru,17876349
+Emil,Tolstobrov,Ipatievich,99,'Kosino-UkhtomskyKamovstreethouse3',79236409000,Tolstobrov99@rambler.ru,18011408
+Artur,Eliseev,Vladimirovich,7,'Kosino-UkhtomskyKamovstreethouse22building1',79250111734,Eliseev7@gmail.com,18238359
+Vladimir,Kirsanov,Eremeevich,99,'Kosino-UkhtomskyKamovstreethouse22building2',79250253084,Kirsanov99@sendmail.ru,18256450
+Efrosinya,Beschastnykh,Nikolaevna,15,'Kosino-UkhtomskyKamovstreethouse24building1',79250282945,Beschastnykh15@sendmail.ru,18266864
+Svetlana,Yemelyanova,Igorevna,14,'PerovoAnosovsthouse7',79250444000,Yemelyanova14@sendmail.ru,18380033
+Valeria,Budylina,Gennadievna,41,'PerovoAnosovsthouse9',79250844000,Budylina41@sendmail.ru,18421024
+Trofimovna,Milina,Milina,48,'PerovoAnosovsthouse11',79250845000,Milina48@aport.ru,18557579
