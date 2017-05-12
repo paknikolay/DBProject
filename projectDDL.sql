@@ -79,6 +79,8 @@ CREATE TABLE schedule(
  subject_type VARCHAR(100) NOT NULL
 );
 
+CREATE INDEX ON schedule(group_no);
+
 
 
 
