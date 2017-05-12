@@ -40,7 +40,7 @@ void Search_menu::on_pushButton_clicked()
     if(ui->department->isChecked() || ui->course->isChecked() ||
             ui->degree->isChecked() ||ui->group->isChecked() ||
             ui->date->isChecked())
-        query+=" NATURAL JOIN student ";
+        query+=" LEFT OUTER JOIN student ON (person_id = student_id) ";
     query+= " WHERE name = '" + ui->name->toPlainText().toStdString() +
     "' AND surname = '" + ui->surname->toPlainText().toStdString() +
      "' AND patronymic = '" + ui->pathronymic->toPlainText().toStdString()+"'";
