@@ -27,3 +27,8 @@ void Sign_up::on_pushButton_clicked()
    m->show();
    this->hide();
 }
+
+void Sign_up::on_pushButton_2_clicked()
+{
+    close();
+}

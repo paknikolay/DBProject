@@ -1,6 +1,7 @@
 #include "search_menu.h"
 #include "ui_search_menu.h"
 #include "schedule_shower.h"
+#include "main_menu.h"
 #include <string>
 using std::string;
 Search_menu::Search_menu(QWidget *parent) :
@@ -8,6 +9,12 @@ Search_menu::Search_menu(QWidget *parent) :
     ui(new Ui::Search_menu)
 {
     ui->setupUi(this);
+    ui->course->hide();
+    ui->group->hide();
+    ui->department->hide();
+    ui->date->hide();
+    ui->degree->hide();
+    ui->pushButton->hide();
 }
 
 Search_menu::~Search_menu()
@@ -27,7 +34,6 @@ void Search_menu::on_pushButton_clicked()
     query+=(ui->degree->isChecked() ? ",degree" : "");
     query+=(ui->group->isChecked() ? ",group_no" : "");
     query+=(ui->date->isChecked() ? ",data_of_enrollment" : "");
-    query+=(ui->subjects->isChecked() ? ",subject_name" : "");
 
     query+=
     " FROM person";
@@ -35,8 +41,6 @@ void Search_menu::on_pushButton_clicked()
             ui->degree->isChecked() ||ui->group->isChecked() ||
             ui->date->isChecked())
         query+=" NATURAL JOIN student ";
-    if(ui->subjects->isChecked())
-        query+= " NATURAL JOIN schedule NATURAL JOIN subject";
     query+= " WHERE name = '" + ui->name->toPlainText().toStdString() +
     "' AND surname = '" + ui->surname->toPlainText().toStdString() +
      "' AND patronymic = '" + ui->pathronymic->toPlainText().toStdString()+"'";
@@ -47,4 +51,28 @@ void Search_menu::on_pushButton_clicked()
 
 
                                    ;
+}
+
+void Search_menu::on_pushButton_3_clicked()
+{
+    Main_menu* menu = new Main_menu(this);
+    menu->show();
+    this->hide();
+}
+
+void Search_menu::on_buttonBox_accepted()
+{
+    ui->label_5->hide();
+    ui->buttonBox->hide();
+    ui->course->show();
+    ui->group->show();
+    ui->department->show();
+    ui->date->show();
+    ui->degree->show();
+    ui->pushButton->show();
+}
+
+void Search_menu::on_pushButton_2_clicked()
+{
+    close();
 }

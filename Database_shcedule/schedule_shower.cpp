@@ -1,5 +1,6 @@
 #include "schedule_shower.h"
 #include "ui_schedule_shower.h"
+#include "main_menu.h"
 #include <pqxx/pqxx>
 
 Schedule_shower::Schedule_shower(QWidget *parent, string query) :
@@ -8,9 +9,8 @@ Schedule_shower::Schedule_shower(QWidget *parent, string query) :
 {
     ui->setupUi(this);
     this-> query = query;
-    ui->label_2->setText(QString::fromStdString(query));
-    pqxx::connection c ("dbname=onlymy1_database user=tiger password=111 port=5432 host=localhost");
-
+    ui->textBrowser->setText(QString::fromStdString(query));
+    pqxx::connection c ("dbname=my_database user=user_1 password=password port=5432 host=localhost");
     pqxx::work txn(c);
     pqxx::result r = txn.exec(query);
 
@@ -43,4 +43,16 @@ Schedule_shower::Schedule_shower(QWidget *parent, string query) :
 Schedule_shower::~Schedule_shower()
 {
     delete ui;
+}
+
+void Schedule_shower::on_pushButton_2_clicked()
+{
+    Main_menu* menu = new Main_menu(this);
+    menu->show();
+    this->hide();
+}
+
+void Schedule_shower::on_pushButton_3_clicked()
+{
+    close();
 }
