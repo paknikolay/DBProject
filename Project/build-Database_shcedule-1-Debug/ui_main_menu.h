@@ -65,6 +65,7 @@ public:
         pushButton_3->setFont(font);
         pushButton_4 = new QPushButton(centralWidget);
         pushButton_4->setObjectName(QStringLiteral("pushButton_4"));
+        pushButton_4->setEnabled(false);
         pushButton_4->setGeometry(QRect(410, 310, 250, 150));
         pushButton_4->setFont(font);
         label = new QLabel(centralWidget);
@@ -80,7 +81,7 @@ public:
         Main_menu->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(Main_menu);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 800, 30));
+        menuBar->setGeometry(QRect(0, 0, 800, 25));
         Main_menu->setMenuBar(menuBar);
         mainToolBar = new QToolBar(Main_menu);
         mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
@@ -97,10 +98,10 @@ public:
     void retranslateUi(QMainWindow *Main_menu)
     {
         Main_menu->setWindowTitle(QApplication::translate("Main_menu", "Main_menu", 0));
-        pushButton->setText(QApplication::translate("Main_menu", "\320\240\320\260\321\201\321\201\320\277\320\270\321\201\320\260\320\275\320\270\320\265 \320\234\320\244\320\242\320\230", 0));
+        pushButton->setText(QApplication::translate("Main_menu", "\320\240\320\260\321\201\320\277\320\270\321\201\320\260\320\275\320\270\320\265 \320\234\320\244\320\242\320\230", 0));
         pushButton_2->setText(QApplication::translate("Main_menu", "\320\240\320\260\321\201\321\201\320\277\320\270\321\201\320\260\320\275\320\270\320\265 \320\275\320\260 \320\267\320\260\320\262\321\202\321\200\320\260", 0));
         pushButton_3->setText(QApplication::translate("Main_menu", "\320\237\320\276\320\270\321\201\320\272 \320\276 \321\207\320\265\320\273\320\276\320\262\320\265\320\272\320\265", 0));
-        pushButton_4->setText(QApplication::translate("Main_menu", "\320\241\320\262\320\276\320\261\320\276\320\264\320\275\320\276\320\265 \320\262\321\200\320\265\320\274\320\265\320\275\321\217", 0));
+        pushButton_4->setText(QApplication::translate("Main_menu", "\320\224\320\276\320\261\320\260\320\262\320\273\320\265\320\275\320\270\320\265 \320\277\320\260\321\200\321\213", 0));
         label->setText(QApplication::translate("Main_menu", "\320\222\321\213\320\261\320\270\321\200\320\260\320\271\321\202\320\265 \320\275\321\203\320\266\320\275\320\276\320\265 \320\264\320\273\321\217 \320\262\320\260\321\201", 0));
         pushButton_5->setText(QApplication::translate("Main_menu", "\320\241\320\274\320\265\320\275\320\260 \320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\321\217", 0));
         pushButton_6->setText(QApplication::translate("Main_menu", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214 \321\201\320\265\320\260\320\275\321\201", 0));

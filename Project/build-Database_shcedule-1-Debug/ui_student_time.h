@@ -13,13 +13,12 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
-#include <QtWidgets/QSpinBox>
+#include <QtWidgets/QRadioButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
@@ -30,35 +29,31 @@ class Ui_student_time
 {
 public:
     QWidget *centralwidget;
-    QCheckBox *checkBox_6;
-    QCheckBox *checkBox_5;
-    QCheckBox *checkBox;
-    QCheckBox *checkBox_2;
-    QCheckBox *checkBox_4;
-    QCheckBox *checkBox_3;
-    QSpinBox *spinBox;
-    QTextBrowser *textBrowser;
-    QTextBrowser *textBrowser_2;
-    QTextBrowser *textBrowser_3;
-    QTextBrowser *textBrowser_4;
-    QTextBrowser *textBrowser_5;
-    QTextBrowser *textBrowser_6;
-    QTextBrowser *textBrowser_7;
-    QTextBrowser *textBrowser_8;
-    QTextBrowser *textBrowser_9;
-    QTextBrowser *textBrowser_10;
-    QTextBrowser *textBrowser_11;
-    QTextBrowser *textBrowser_12;
-    QTextBrowser *textBrowser_13;
-    QTextBrowser *textBrowser_14;
-    QTextBrowser *textBrowser_15;
+    QTextBrowser *idSubject;
+    QTextBrowser *idTeacher;
     QLabel *label;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_4;
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
+    QRadioButton *wednesday;
+    QRadioButton *friday;
+    QRadioButton *monday;
+    QRadioButton *saturday;
+    QRadioButton *tuesdsy;
+    QLabel *label_5;
+    QLabel *label_2;
+    QLabel *label_3;
+    QRadioButton *thursday;
+    QTextBrowser *subjectType;
+    QLabel *label_4;
+    QLabel *label_6;
+    QTextBrowser *group;
+    QLabel *label_7;
+    QLabel *label_8;
+    QTextBrowser *building;
+    QLabel *label_9;
+    QTextBrowser *class_no;
+    QTextBrowser *time;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -69,114 +64,116 @@ public:
         student_time->resize(800, 600);
         centralwidget = new QWidget(student_time);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
-        checkBox_6 = new QCheckBox(centralwidget);
-        checkBox_6->setObjectName(QStringLiteral("checkBox_6"));
-        checkBox_6->setGeometry(QRect(650, 360, 101, 21));
-        QFont font;
-        font.setPointSize(13);
-        checkBox_6->setFont(font);
-        checkBox_5 = new QCheckBox(centralwidget);
-        checkBox_5->setObjectName(QStringLiteral("checkBox_5"));
-        checkBox_5->setGeometry(QRect(520, 360, 111, 21));
-        checkBox_5->setFont(font);
-        checkBox = new QCheckBox(centralwidget);
-        checkBox->setObjectName(QStringLiteral("checkBox"));
-        checkBox->setGeometry(QRect(20, 360, 161, 21));
-        checkBox->setFont(font);
-        checkBox_2 = new QCheckBox(centralwidget);
-        checkBox_2->setObjectName(QStringLiteral("checkBox_2"));
-        checkBox_2->setGeometry(QRect(180, 360, 101, 21));
-        checkBox_2->setFont(font);
-        checkBox_4 = new QCheckBox(centralwidget);
-        checkBox_4->setObjectName(QStringLiteral("checkBox_4"));
-        checkBox_4->setGeometry(QRect(400, 360, 101, 21));
-        checkBox_4->setFont(font);
-        checkBox_3 = new QCheckBox(centralwidget);
-        checkBox_3->setObjectName(QStringLiteral("checkBox_3"));
-        checkBox_3->setGeometry(QRect(300, 360, 88, 22));
-        checkBox_3->setFont(font);
-        spinBox = new QSpinBox(centralwidget);
-        spinBox->setObjectName(QStringLiteral("spinBox"));
-        spinBox->setGeometry(QRect(10, 50, 52, 32));
-        textBrowser = new QTextBrowser(centralwidget);
-        textBrowser->setObjectName(QStringLiteral("textBrowser"));
-        textBrowser->setGeometry(QRect(10, 90, 250, 40));
-        textBrowser_2 = new QTextBrowser(centralwidget);
-        textBrowser_2->setObjectName(QStringLiteral("textBrowser_2"));
-        textBrowser_2->setGeometry(QRect(270, 90, 250, 40));
-        textBrowser_3 = new QTextBrowser(centralwidget);
-        textBrowser_3->setObjectName(QStringLiteral("textBrowser_3"));
-        textBrowser_3->setGeometry(QRect(530, 90, 250, 40));
-        textBrowser_4 = new QTextBrowser(centralwidget);
-        textBrowser_4->setObjectName(QStringLiteral("textBrowser_4"));
-        textBrowser_4->setGeometry(QRect(270, 140, 250, 40));
-        textBrowser_5 = new QTextBrowser(centralwidget);
-        textBrowser_5->setObjectName(QStringLiteral("textBrowser_5"));
-        textBrowser_5->setGeometry(QRect(10, 140, 250, 40));
-        textBrowser_6 = new QTextBrowser(centralwidget);
-        textBrowser_6->setObjectName(QStringLiteral("textBrowser_6"));
-        textBrowser_6->setGeometry(QRect(530, 140, 250, 40));
-        textBrowser_7 = new QTextBrowser(centralwidget);
-        textBrowser_7->setObjectName(QStringLiteral("textBrowser_7"));
-        textBrowser_7->setGeometry(QRect(270, 190, 250, 40));
-        textBrowser_8 = new QTextBrowser(centralwidget);
-        textBrowser_8->setObjectName(QStringLiteral("textBrowser_8"));
-        textBrowser_8->setGeometry(QRect(10, 190, 250, 40));
-        textBrowser_9 = new QTextBrowser(centralwidget);
-        textBrowser_9->setObjectName(QStringLiteral("textBrowser_9"));
-        textBrowser_9->setGeometry(QRect(530, 190, 250, 40));
-        textBrowser_10 = new QTextBrowser(centralwidget);
-        textBrowser_10->setObjectName(QStringLiteral("textBrowser_10"));
-        textBrowser_10->setGeometry(QRect(270, 240, 250, 40));
-        textBrowser_11 = new QTextBrowser(centralwidget);
-        textBrowser_11->setObjectName(QStringLiteral("textBrowser_11"));
-        textBrowser_11->setGeometry(QRect(10, 240, 250, 40));
-        textBrowser_12 = new QTextBrowser(centralwidget);
-        textBrowser_12->setObjectName(QStringLiteral("textBrowser_12"));
-        textBrowser_12->setGeometry(QRect(530, 240, 250, 40));
-        textBrowser_13 = new QTextBrowser(centralwidget);
-        textBrowser_13->setObjectName(QStringLiteral("textBrowser_13"));
-        textBrowser_13->setGeometry(QRect(270, 290, 250, 40));
-        textBrowser_14 = new QTextBrowser(centralwidget);
-        textBrowser_14->setObjectName(QStringLiteral("textBrowser_14"));
-        textBrowser_14->setGeometry(QRect(10, 290, 250, 40));
-        textBrowser_15 = new QTextBrowser(centralwidget);
-        textBrowser_15->setObjectName(QStringLiteral("textBrowser_15"));
-        textBrowser_15->setGeometry(QRect(530, 290, 250, 40));
+        idSubject = new QTextBrowser(centralwidget);
+        idSubject->setObjectName(QStringLiteral("idSubject"));
+        idSubject->setGeometry(QRect(10, 190, 250, 40));
+        idSubject->setReadOnly(false);
+        idTeacher = new QTextBrowser(centralwidget);
+        idTeacher->setObjectName(QStringLiteral("idTeacher"));
+        idTeacher->setGeometry(QRect(270, 150, 250, 40));
+        idTeacher->setReadOnly(false);
         label = new QLabel(centralwidget);
         label->setObjectName(QStringLiteral("label"));
-        label->setGeometry(QRect(40, 10, 731, 21));
-        QFont font1;
-        font1.setPointSize(15);
-        label->setFont(font1);
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(90, 60, 91, 16));
-        label_2->setFont(font1);
-        label_3 = new QLabel(centralwidget);
-        label_3->setObjectName(QStringLiteral("label_3"));
-        label_3->setGeometry(QRect(368, 60, 51, 20));
-        label_3->setFont(font1);
-        label_4 = new QLabel(centralwidget);
-        label_4->setObjectName(QStringLiteral("label_4"));
-        label_4->setGeometry(QRect(600, 60, 91, 21));
-        label_4->setFont(font1);
+        label->setGeometry(QRect(70, 80, 731, 21));
+        QFont font;
+        font.setPointSize(15);
+        label->setFont(font);
         pushButton = new QPushButton(centralwidget);
         pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(340, 390, 101, 31));
-        pushButton->setFont(font1);
+        pushButton->setGeometry(QRect(340, 490, 101, 31));
+        pushButton->setFont(font);
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(20, 390, 200, 30));
+        pushButton_2->setGeometry(QRect(10, 10, 120, 40));
+        QFont font1;
+        font1.setPointSize(10);
         pushButton_2->setFont(font1);
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(570, 390, 200, 30));
+        pushButton_3->setGeometry(QRect(660, 10, 120, 40));
         pushButton_3->setFont(font1);
+        wednesday = new QRadioButton(centralwidget);
+        wednesday->setObjectName(QStringLiteral("wednesday"));
+        wednesday->setGeometry(QRect(560, 360, 101, 22));
+        wednesday->setFont(font);
+        friday = new QRadioButton(centralwidget);
+        friday->setObjectName(QStringLiteral("friday"));
+        friday->setGeometry(QRect(320, 390, 131, 22));
+        friday->setFont(font);
+        monday = new QRadioButton(centralwidget);
+        monday->setObjectName(QStringLiteral("monday"));
+        monday->setEnabled(true);
+        monday->setGeometry(QRect(40, 360, 171, 22));
+        monday->setFont(font);
+        monday->setChecked(true);
+        saturday = new QRadioButton(centralwidget);
+        saturday->setObjectName(QStringLiteral("saturday"));
+        saturday->setGeometry(QRect(560, 390, 105, 22));
+        saturday->setFont(font);
+        tuesdsy = new QRadioButton(centralwidget);
+        tuesdsy->setObjectName(QStringLiteral("tuesdsy"));
+        tuesdsy->setGeometry(QRect(320, 360, 105, 22));
+        tuesdsy->setFont(font);
+        label_5 = new QLabel(centralwidget);
+        label_5->setObjectName(QStringLiteral("label_5"));
+        label_5->setGeometry(QRect(310, 120, 221, 21));
+        label_5->setFont(font);
+        label_2 = new QLabel(centralwidget);
+        label_2->setObjectName(QStringLiteral("label_2"));
+        label_2->setGeometry(QRect(30, 150, 201, 21));
+        label_2->setFont(font);
+        label_3 = new QLabel(centralwidget);
+        label_3->setObjectName(QStringLiteral("label_3"));
+        label_3->setGeometry(QRect(320, 290, 131, 31));
+        label_3->setFont(font);
+        thursday = new QRadioButton(centralwidget);
+        thursday->setObjectName(QStringLiteral("thursday"));
+        thursday->setGeometry(QRect(40, 390, 111, 21));
+        thursday->setFont(font);
+        subjectType = new QTextBrowser(centralwidget);
+        subjectType->setObjectName(QStringLiteral("subjectType"));
+        subjectType->setGeometry(QRect(540, 190, 250, 40));
+        subjectType->setReadOnly(false);
+        label_4 = new QLabel(centralwidget);
+        label_4->setObjectName(QStringLiteral("label_4"));
+        label_4->setGeometry(QRect(610, 160, 141, 21));
+        label_4->setFont(font);
+        label_6 = new QLabel(centralwidget);
+        label_6->setObjectName(QStringLiteral("label_6"));
+        label_6->setGeometry(QRect(320, 330, 59, 18));
+        label_6->setFont(font);
+        group = new QTextBrowser(centralwidget);
+        group->setObjectName(QStringLiteral("group"));
+        group->setGeometry(QRect(340, 240, 100, 40));
+        group->setReadOnly(false);
+        label_7 = new QLabel(centralwidget);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setGeometry(QRect(320, 200, 151, 16));
+        label_7->setFont(font);
+        label_8 = new QLabel(centralwidget);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setGeometry(QRect(30, 450, 201, 16));
+        label_8->setFont(font);
+        building = new QTextBrowser(centralwidget);
+        building->setObjectName(QStringLiteral("building"));
+        building->setGeometry(QRect(260, 440, 250, 40));
+        building->setReadOnly(false);
+        label_9 = new QLabel(centralwidget);
+        label_9->setObjectName(QStringLiteral("label_9"));
+        label_9->setGeometry(QRect(540, 450, 121, 21));
+        label_9->setFont(font);
+        class_no = new QTextBrowser(centralwidget);
+        class_no->setObjectName(QStringLiteral("class_no"));
+        class_no->setGeometry(QRect(680, 440, 100, 40));
+        class_no->setReadOnly(false);
+        time = new QTextBrowser(centralwidget);
+        time->setObjectName(QStringLiteral("time"));
+        time->setGeometry(QRect(460, 290, 191, 41));
+        time->setReadOnly(false);
         student_time->setCentralWidget(centralwidget);
         menubar = new QMenuBar(student_time);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 30));
+        menubar->setGeometry(QRect(0, 0, 800, 25));
         student_time->setMenuBar(menubar);
         statusbar = new QStatusBar(student_time);
         statusbar->setObjectName(QStringLiteral("statusbar"));
@@ -190,19 +187,59 @@ public:
     void retranslateUi(QMainWindow *student_time)
     {
         student_time->setWindowTitle(QApplication::translate("student_time", "MainWindow", 0));
-        checkBox_6->setText(QApplication::translate("student_time", "\320\241\321\203\320\261\320\261\320\276\321\202\320\260", 0));
-        checkBox_5->setText(QApplication::translate("student_time", "\320\237\321\217\321\202\320\275\320\270\321\206\320\260", 0));
-        checkBox->setText(QApplication::translate("student_time", "\320\237\320\276\320\275\320\265\320\264\320\265\320\273\321\214\320\275\320\270\320\272", 0));
-        checkBox_2->setText(QApplication::translate("student_time", "\320\222\321\202\320\276\321\200\320\275\320\270\320\272", 0));
-        checkBox_4->setText(QApplication::translate("student_time", "\320\247\320\265\321\202\320\262\320\265\321\200\320\263", 0));
-        checkBox_3->setText(QApplication::translate("student_time", "\320\241\321\200\320\265\320\264\320\260", 0));
+        idSubject->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1</p></body></html>", 0));
+        idTeacher->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">1</p></body></html>", 0));
         label->setText(QApplication::translate("student_time", "\320\222\320\262\320\265\320\264\320\270\321\202\320\265 \320\272\320\276\320\273-\320\262\320\276 \321\201\321\202\321\203\320\264\320\265\320\275\321\202\320\276\320\262, \320\260 \321\202\320\260\320\272 \320\266\320\265 \320\267\320\260\320\277\320\276\320\273\320\275\320\270\321\202\320\265 \321\201\320\276\320\276\321\202\320\262\320\265\321\202\321\201\321\202\320\262\321\203\321\216\321\211\320\270\320\265 \320\277\320\276\320\273\321\217", 0));
-        label_2->setText(QApplication::translate("student_time", "\320\244\320\260\320\274\320\270\320\273\320\270\321\217", 0));
-        label_3->setText(QApplication::translate("student_time", "\320\230\320\274\321\217", 0));
-        label_4->setText(QApplication::translate("student_time", "\320\236\321\202\321\207\320\265\321\201\321\202\320\262\320\276", 0));
-        pushButton->setText(QApplication::translate("student_time", "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202", 0));
+        pushButton->setText(QApplication::translate("student_time", "\320\224\320\276\320\261\320\260\320\262\320\270\321\202\321\214", 0));
         pushButton_2->setText(QApplication::translate("student_time", "\320\223\320\273\320\260\320\262\320\275\320\276\320\265 \320\274\320\265\320\275\321\216", 0));
         pushButton_3->setText(QApplication::translate("student_time", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214 \321\201\320\265\320\260\320\275\321\201", 0));
+        wednesday->setText(QApplication::translate("student_time", "\320\241\321\200\320\265\320\264\320\260", 0));
+        friday->setText(QApplication::translate("student_time", "\320\237\321\217\321\202\320\275\320\270\321\206\320\260", 0));
+        monday->setText(QApplication::translate("student_time", "\320\237\320\276\320\275\320\265\320\264\320\265\320\273\321\214\320\275\320\270\320\272", 0));
+        saturday->setText(QApplication::translate("student_time", "\320\241\321\203\320\261\320\261\320\276\321\202\320\260", 0));
+        tuesdsy->setText(QApplication::translate("student_time", "\320\222\321\202\320\276\321\200\320\275\320\270\320\272", 0));
+        label_5->setText(QApplication::translate("student_time", "ID \320\237\321\200\320\265\320\277\320\276\320\264\320\260\320\262\320\260\321\202\320\265\320\273\321\217", 0));
+        label_2->setText(QApplication::translate("student_time", "ID \320\237\321\200\320\265\320\264\320\274\320\265\321\202\320\260", 0));
+        label_3->setText(QApplication::translate("student_time", "\320\235\320\276\320\274\320\265\321\200 \320\277\320\260\321\200\321\213:", 0));
+        thursday->setText(QApplication::translate("student_time", "\320\247\320\265\321\202\320\262\320\265\321\200\320\263", 0));
+        subjectType->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">seminar</p></body></html>", 0));
+        label_4->setText(QApplication::translate("student_time", "\320\242\320\270\320\277 \320\277\321\200\320\265\320\264\320\274\320\265\321\202\320\260", 0));
+        label_6->setText(QApplication::translate("student_time", "\320\224\320\265\320\275\321\214:", 0));
+        group->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">596</p></body></html>", 0));
+        label_7->setText(QApplication::translate("student_time", "\320\235\320\276\320\274\320\265\321\200 \320\263\321\200\321\203\320\277\320\277\321\213:", 0));
+        label_8->setText(QApplication::translate("student_time", "\320\235\320\260\320\267\320\262\320\260\320\275\320\270\320\265 \320\272\320\276\321\200\320\277\321\203\321\201\320\260:", 0));
+        building->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">GK</p></body></html>", 0));
+        label_9->setText(QApplication::translate("student_time", "\320\220\321\203\320\264\320\270\321\202\320\276\321\200\320\270\321\217:", 0));
+        class_no->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">413</p></body></html>", 0));
+        time->setHtml(QApplication::translate("student_time", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">5</p></body></html>", 0));
     } // retranslateUi
 
 };

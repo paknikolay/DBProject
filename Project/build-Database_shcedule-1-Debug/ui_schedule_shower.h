@@ -20,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTableWidget>
+#include <QtWidgets/QTextBrowser>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -29,11 +30,10 @@ class Ui_Schedule_shower
 public:
     QWidget *centralwidget;
     QTableWidget *tableWidget;
-    QPushButton *pushButton;
     QPushButton *pushButton_2;
     QPushButton *pushButton_3;
     QLabel *label;
-    QLabel *label_2;
+    QTextBrowser *textBrowser;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -41,37 +41,35 @@ public:
     {
         if (Schedule_shower->objectName().isEmpty())
             Schedule_shower->setObjectName(QStringLiteral("Schedule_shower"));
-        Schedule_shower->resize(800, 600);
+        Schedule_shower->resize(799, 493);
         centralwidget = new QWidget(Schedule_shower);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         tableWidget = new QTableWidget(centralwidget);
         tableWidget->setObjectName(QStringLiteral("tableWidget"));
-        tableWidget->setGeometry(QRect(30, 151, 751, 371));
-        pushButton = new QPushButton(centralwidget);
-        pushButton->setObjectName(QStringLiteral("pushButton"));
-        pushButton->setGeometry(QRect(10, 50, 250, 50));
-        QFont font;
-        font.setPointSize(15);
-        pushButton->setFont(font);
+        tableWidget->setGeometry(QRect(20, 61, 751, 371));
         pushButton_2 = new QPushButton(centralwidget);
         pushButton_2->setObjectName(QStringLiteral("pushButton_2"));
-        pushButton_2->setGeometry(QRect(270, 50, 250, 50));
+        pushButton_2->setGeometry(QRect(20, 10, 120, 40));
+        QFont font;
+        font.setPointSize(10);
         pushButton_2->setFont(font);
         pushButton_3 = new QPushButton(centralwidget);
         pushButton_3->setObjectName(QStringLiteral("pushButton_3"));
-        pushButton_3->setGeometry(QRect(530, 50, 250, 50));
+        pushButton_3->setGeometry(QRect(660, 10, 120, 40));
         pushButton_3->setFont(font);
         label = new QLabel(centralwidget);
         label->setObjectName(QStringLiteral("label"));
         label->setGeometry(QRect(310, 10, 181, 20));
-        label->setFont(font);
-        label_2 = new QLabel(centralwidget);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setGeometry(QRect(40, 270, 731, 251));
+        QFont font1;
+        font1.setPointSize(15);
+        label->setFont(font1);
+        textBrowser = new QTextBrowser(centralwidget);
+        textBrowser->setObjectName(QStringLiteral("textBrowser"));
+        textBrowser->setGeometry(QRect(190, 10, 421, 51));
         Schedule_shower->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Schedule_shower);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 25));
+        menubar->setGeometry(QRect(0, 0, 799, 25));
         Schedule_shower->setMenuBar(menubar);
         statusbar = new QStatusBar(Schedule_shower);
         statusbar->setObjectName(QStringLiteral("statusbar"));
@@ -85,11 +83,9 @@ public:
     void retranslateUi(QMainWindow *Schedule_shower)
     {
         Schedule_shower->setWindowTitle(QApplication::translate("Schedule_shower", "MainWindow", 0));
-        pushButton->setText(QApplication::translate("Schedule_shower", "\320\222\320\265\321\200\320\275\321\203\321\202\321\214\321\201\321\217 \320\275\320\260\320\267\320\260\320\264", 0));
-        pushButton_2->setText(QApplication::translate("Schedule_shower", "\320\222\321\213\320\271\321\202\320\270 \320\262 \320\263\320\273\320\260\320\262\320\275\320\276\320\265 \320\274\320\265\320\275\321\216", 0));
+        pushButton_2->setText(QApplication::translate("Schedule_shower", "\320\223\320\273\320\260\320\262\320\275\320\276\320\265 \320\274\320\265\320\275\321\216", 0));
         pushButton_3->setText(QApplication::translate("Schedule_shower", "\320\227\320\260\320\262\320\265\321\200\321\210\320\270\321\202\321\214 \321\201\320\265\320\260\320\275\321\201", 0));
         label->setText(QApplication::translate("Schedule_shower", "\320\240\320\265\320\267\321\203\320\273\321\214\321\202\320\260\321\202 \320\267\320\260\320\277\321\200\320\276\321\201\320\260", 0));
-        label_2->setText(QApplication::translate("Schedule_shower", "TextLabel", 0));
     } // retranslateUi
 
 };

@@ -173,7 +173,9 @@ first: all
 ####### Build rules
 
 $(TARGET): ui_main_menu.h ui_search_menu.h ui_sign_up.h ui_schedule_shower.h ui_schedule_menu_.h ui_student_time.h $(OBJECTS)  
-	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS)-I /usr/local/include/pqxx -L /usr/local/lib -I /usr/local/pgsql/include -L /usr/local/pgsql/lib -lpqxx -lpq
+	$(LINK) $(LFLAGS) -o $(TARGET) $(OBJECTS) $(OBJCOMP) $(LIBS) -I /usr/local/include/pqxx -L /usr/local/lib -I /usr/local/pgsql/include -L /usr/local/pgsql/lib -lpqxx -lpq
+
+
 
 Makefile: ../Database_shcedule/Database_shcedule.pro /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64/qmake.conf /usr/lib/x86_64-linux-gnu/qt5/mkspecs/features/spec_pre.prf \
 		/usr/lib/x86_64-linux-gnu/qt5/mkspecs/common/unix.conf \
@@ -348,7 +350,8 @@ moc_main_menu.cpp: ../Database_shcedule/user.h \
 moc_search_menu.cpp: ../Database_shcedule/search_menu.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/nikolai/QT/Database_shcedule -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../Database_shcedule/search_menu.h -o moc_search_menu.cpp
 
-moc_sign_up.cpp: ../Database_shcedule/sign_up.h
+moc_sign_up.cpp: ../Database_shcedule/user.h \
+		../Database_shcedule/sign_up.h
 	/usr/lib/x86_64-linux-gnu/qt5/bin/moc $(DEFINES) -I/usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64 -I/home/nikolai/QT/Database_shcedule -I/usr/include/x86_64-linux-gnu/qt5 -I/usr/include/x86_64-linux-gnu/qt5/QtWidgets -I/usr/include/x86_64-linux-gnu/qt5/QtGui -I/usr/include/x86_64-linux-gnu/qt5/QtCore -I. -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include ../Database_shcedule/sign_up.h -o moc_sign_up.cpp
 
 moc_schedule_shower.cpp: ../Database_shcedule/schedule_shower.h
@@ -394,8 +397,8 @@ compiler_clean: compiler_moc_header_clean compiler_uic_clean
 ####### Compile
 
 main.o: ../Database_shcedule/main.cpp ../Database_shcedule/sign_up.h \
-		../Database_shcedule/main_menu.h \
 		../Database_shcedule/user.h \
+		../Database_shcedule/main_menu.h \
 		../Database_shcedule/persional_data.h \
 		../Database_shcedule/schedule_shower.h \
 		../Database_shcedule/search_menu.h \
@@ -408,30 +411,56 @@ main_menu.o: ../Database_shcedule/main_menu.cpp ../Database_shcedule/main_menu.h
 		../Database_shcedule/persional_data.h \
 		../Database_shcedule/schedule_shower.h \
 		../Database_shcedule/search_menu.h \
-		ui_main_menu.h
+		../Database_shcedule/student_time.h \
+		ui_main_menu.h \
+		../Database_shcedule/schedule_menu_.h \
+		../Database_shcedule/sign_up.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main_menu.o ../Database_shcedule/main_menu.cpp
 
 search_menu.o: ../Database_shcedule/search_menu.cpp ../Database_shcedule/search_menu.h \
-		ui_search_menu.h
+		ui_search_menu.h \
+		../Database_shcedule/schedule_shower.h \
+		../Database_shcedule/main_menu.h \
+		../Database_shcedule/user.h \
+		../Database_shcedule/persional_data.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o search_menu.o ../Database_shcedule/search_menu.cpp
 
 sign_up.o: ../Database_shcedule/sign_up.cpp ../Database_shcedule/sign_up.h \
-		ui_sign_up.h
+		../Database_shcedule/user.h \
+		ui_sign_up.h \
+		../Database_shcedule/main_menu.h \
+		../Database_shcedule/persional_data.h \
+		../Database_shcedule/schedule_shower.h \
+		../Database_shcedule/search_menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o sign_up.o ../Database_shcedule/sign_up.cpp
 
 user.o: ../Database_shcedule/user.cpp ../Database_shcedule/user.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o user.o ../Database_shcedule/user.cpp
 
 schedule_shower.o: ../Database_shcedule/schedule_shower.cpp ../Database_shcedule/schedule_shower.h \
-		ui_schedule_shower.h
+		ui_schedule_shower.h \
+		../Database_shcedule/main_menu.h \
+		../Database_shcedule/user.h \
+		../Database_shcedule/persional_data.h \
+		../Database_shcedule/search_menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o schedule_shower.o ../Database_shcedule/schedule_shower.cpp
 
 schedule_menu_.o: ../Database_shcedule/schedule_menu_.cpp ../Database_shcedule/schedule_menu_.h \
-		ui_schedule_menu_.h
+		ui_schedule_menu_.h \
+		../Database_shcedule/schedule_shower.h \
+		../Database_shcedule/main_menu.h \
+		../Database_shcedule/user.h \
+		../Database_shcedule/persional_data.h \
+		../Database_shcedule/search_menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o schedule_menu_.o ../Database_shcedule/schedule_menu_.cpp
 
 student_time.o: ../Database_shcedule/student_time.cpp ../Database_shcedule/student_time.h \
-		ui_student_time.h
+		ui_student_time.h \
+		../Database_shcedule/main_menu.h \
+		../Database_shcedule/user.h \
+		../Database_shcedule/persional_data.h \
+		../Database_shcedule/schedule_shower.h \
+		../Database_shcedule/search_menu.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o student_time.o ../Database_shcedule/student_time.cpp
 
 moc_main_menu.o: moc_main_menu.cpp 
