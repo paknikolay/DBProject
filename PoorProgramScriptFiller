@@ -2,11 +2,15 @@
 #include <string>
 #include <pqxx/pqxx>
 #include <iostream>
+#include <vector>
+
+using std::vector;
+using std::pair;
 
 using std::string;
 using std::ifstream;
 using std::ofstream;
-/*
+
 string tostr(int x){
     string s;
     while(x>0){
@@ -59,7 +63,7 @@ string tostr(int x){
     }
     return s1;
 }
-
+/*
 string getemail(){
     int a = abs((rand()*rand())%1000*rand());
     string s;
@@ -122,7 +126,7 @@ int main() {
     }*/
 
     /////////// creating student
-
+/*
     ofstream fstudent("student.csv");
 
     pqxx::connection c ("dbname=my_database user=user_1 password=password port=5432 host=localhost");
@@ -181,7 +185,97 @@ int main() {
         string s;
         s+=ind[k] + ", 22-07-2012, master, 5, 3, 9, 231";
         fstudent<<s<< "\n";
+    }*/
+/*
+
+    ofstream fchairteacher("chair_teacher.csv");
+    pqxx::connection c ("dbname=my_database user=user_1 password=password port=5432 host=localhost");
+    pqxx::work txn(c);
+
+
+    pqxx::result r = txn.exec("SELECT teacher_id FROM teachers ORDER BY teacher_id");
+
+    string ind[32];
+    int k = 0;
+    for(pqxx::result::iterator i = r.begin(); i<r.end(); ++i){
+
+        for(int j = 0; j < i.size(); ++j){
+            ind[k] = i[j].c_str();
+            ++k;
+        }
     }
+
+    for (int l = 0; l < 30; ++l) {
+        string s =ind[l];
+        switch (l%4){
+            case 0:
+                s+=",1";
+                break;
+            case 1:
+                s+=",2";
+                break;
+            case 2:
+                s+=",3";
+                break;
+            case 3:
+                s+=",4";
+                break;
+        }
+   fchairteacher<<s<<"\n";
+    }
+*/
+srand(100);
+    ofstream fschedule("schedule.csv");
+    ifstream ftmp("tmp.txt");
+    vector<pair<string,string>> techerSubject;
+    while(!ftmp.eof()){
+    string tmp1,tmp2;
+        ftmp>>tmp1>>tmp2;
+        techerSubject.push_back(std::make_pair(tmp1,tmp2));
+    }
+
+    int mas[8];
+    string buildings[] = {"NK", "GK","LK","KPM", "BIOK"};
+    string types[] = {"lecture", "seminar", "laba"};
+    string groups[] = {"494","496", "596", "594", "231", "633","631","317", "315"};
+    string days[] = {"monday", "tuesday","wednesday","thursday", "friday", "saturday"};
+    for(auto day:days) {
+        for (auto group:groups) {
+            for (int i = 0; i < 8; i++)
+                mas[i] = 0;
+            int amountOfLessons = ((rand() * rand()) % 8 +3 )%7 +1;
+
+            for (int i = 0; i < amountOfLessons; ++i) {
+                while (amountOfLessons>0) {
+                    string sc;
+                    int t = rand()%8;
+                    while(mas[t] == 1){
+                        t= rand()%8;
+                    }
+                    mas[t]=1;
+                    --amountOfLessons;
+
+
+                     long long teacherSubInd = (rand()*rand())%(techerSubject.size()-1);
+                    int building = rand()%5;
+                    int hall_no = rand()%300 +100;
+                    int type = rand()%12;
+                    if(type <=4) type = 0;
+                    else if(type <= 10) type = 1;
+                    else type = 2;
+
+                    char lesson_no = '1' + t;
+                    sc = day +","+ lesson_no+"," + tostr(hall_no)+ ","+buildings[building]+","+ techerSubject[teacherSubInd].first
+                         + ","+ group + ","+ techerSubject[teacherSubInd].second+","+types[type];
+                    fschedule<<sc<<"\n";
+                }
+            }
+        }
+
+
+    }
+
+
 
     return 0;
 }
